@@ -92,4 +92,17 @@ export class SalesforcePortalClient {
       }
     }
   }
+  async subscribeToChannel(channelName: string){
+    const replayId = -2
+    const channel= 'foo'
+    //@ts-ignore
+    const replayExtension = new jsforce.StreamingExtension.Replay(channel, replayId)
+    //@ts-ignore
+    const fayeClient =  await this.login().then(l => l.streaming.createClient([ replayExtension ]))
+   fayeClient.subscribe(channel, (data: any) => {
+      console.log(`channel ${channel}, data ${data}`)
+    })
+
+    await this.login().then(l => l.streaming.topic('foo').subscribe(m => console.log(m)))
+  }
 }
