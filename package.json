@@ -1,12 +1,56 @@
 {
-  "name": "salesforce-poc",
-  "version": "1.0.0",
-  "main": "run.js",
-  "license": "MIT",
+  "name": "portal-cli",
+  "version": "0.0.0",
+  "author": "Gideon Goldberg @gidsg",
+  "bin": {
+    "portal-cli": "./bin/run"
+  },
+  "bugs": "https://github.com/gidsg/portal-cli/issues",
   "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
     "@types/dotenv": "^6.1.1",
-    "@types/node": "^12.7.5",
+    "@types/uuid": "^3.4.5",
+    "cli-ux": "^5.3.2",
     "dotenv": "^8.1.0",
-    "nforce": "^1.12.2"
-  }
+    "jsforce": "^1.9.2",
+    "tslib": "^1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^3",
+    "@types/chai": "^4",
+    "@types/jsforce": "^1.9.9",
+    "@types/node": "^10",
+    "chai": "^4",
+    "nyc": "^13",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/gidsg/portal-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "portal-cli"
+  },
+  "repository": "gidsg/portal-cli",
+  "scripts": {
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\""
+  },
+  "types": "lib/index.d.ts"
 }
