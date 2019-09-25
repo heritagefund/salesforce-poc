@@ -11,6 +11,7 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "@types/dotenv": "^6.1.1",
+    "@types/redis": "^2.8.13",
     "@types/uuid": "^3.4.5",
     "cli-ux": "^5.3.2",
     "dotenv": "^8.1.0",

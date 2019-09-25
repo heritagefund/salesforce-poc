@@ -13,7 +13,7 @@ const sfClient =  new SalesforcePortalClient(process.env.SALESFORCE_CONSUMER_KEY
     this.log('=========================')
     const projectTitle: string = await cli.prompt('Project title')
     const organisationName: string = await cli.prompt('Organisation name')
-    await Promise.all([sfClient.getInstanceId(),sfClient.postApexRest(projectTitle, organisationName)]).then(p => this.log(`${p[0]}/${JSON.parse(p[1]).caseId}`))
+    await Promise.all([sfClient.getInstanceId(), sfClient.postApexRest(projectTitle, organisationName)]).then(p => this.log(`${p[0]}/${JSON.parse(p[1]).caseId}`))
   }
 }
 
