@@ -100,8 +100,8 @@ export class SalesforcePortalClient {
     const changedFields: Array<string> = message.payload.ChangeEventHeader.changedFields
     console.log(message.payload.ChangeEventHeader.recordIds + '\n =================')
     changedFields.forEach(cf => console.log(`${cf}: ${message.payload[cf]}`))
-
   }
+
   async subscribeToChannel(channel: string) {
     const redisClient: redis.RedisClient = redis.createClient()
     const getAsync = promisify(redisClient.get).bind(redisClient);
@@ -122,9 +122,11 @@ export class SalesforcePortalClient {
     //@ts-ignore
     const streamingClient = conn.streaming.createClient([replayExtension, authExtension])
     console.log('Starting subscription...')
-    streamingClient.subscribe(channel, (data: any) => {
-      setAsync(channel, data.event.replayId).then(r => console.log)
-      console.log(data)
+    const s = this.streamPrettifier
+
+    streamingClient.subscribe(channel, async function (data: any) {
+      await setAsync(channel, data.event.replayId)
+      s(data)
     })
   }
 }
