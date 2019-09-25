@@ -92,17 +92,26 @@ export class SalesforcePortalClient {
       }
     }
   }
-  async subscribeToChannel(channelName: string){
+
+  private streamPrettifier(message: any) {
+    // const example = { "schema": "idzQ0I-adgCfqNzILegnJg", "payload": { "LastModifiedDate": "2019-09-25T10:32:28Z", "AccountId": "0012500001DNi0FAAT", "ChangeEventHeader": { "commitNumber": 10583584855437, "commitUser": "0054J000000g1dGQAQ", "sequenceNumber": 1, "entityName": "Case", "changeType": "UPDATE", "changedFields": ["AccountId", "LastModifiedDate"], "changeOrigin": "com/salesforce/api/soap/47.0;client=SfdcInternalAPI/", "transactionKey": "000c6c88-b097-f5fb-0005-65d83dc022e5", "commitTimestamp": 1569407548000, "recordIds": ["50025000009vJE9AAM"] } }, "event": { "replayId": 103773372 } }
+    const changedFields: Array<string> = message.payload.ChangeEventHeader.changedFields
+    console.log(message.payload.ChangeEventHeader.recordIds + '\n =================')
+    changedFields.forEach(cf => console.log(`${cf}: ${message.payload[cf]}`))
+ 
+  }
+  async subscribeToChannel(channel: string) {
     const replayId = -2
-    const channel= 'foo'
     //@ts-ignore
     const replayExtension = new jsforce.StreamingExtension.Replay(channel, replayId)
     //@ts-ignore
-    const fayeClient =  await this.login().then(l => l.streaming.createClient([ replayExtension ]))
-   fayeClient.subscribe(channel, (data: any) => {
-      console.log(`channel ${channel}, data ${data}`)
+    const authExtension = new jsforce.StreamingExtension.AuthFailure(() => process.exit(1))
+    const conn = await this.login()
+    //@ts-ignore
+    const streamingClient = conn.streaming.createClient([replayExtension, authExtension])
+    console.log('Starting subscription...')
+    streamingClient.subscribe(channel, (data: any) => {
+      this.streamPrettifier(data)
     })
-
-    await this.login().then(l => l.streaming.topic('foo').subscribe(m => console.log(m)))
   }
 }
