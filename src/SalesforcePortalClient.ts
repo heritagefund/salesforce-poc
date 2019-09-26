@@ -97,9 +97,11 @@ export class SalesforcePortalClient {
 
   private static streamPrettifier(message: any) {
     //const example = { "schema": "idzQ0I-adgCfqNzILegnJg", "payload": { "LastModifiedDate": "2019-09-25T10:32:28Z", "AccountId": "0012500001DNi0FAAT", "ChangeEventHeader": { "commitNumber": 10583584855437, "commitUser": "0054J000000g1dGQAQ", "sequenceNumber": 1, "entityName": "Case", "changeType": "UPDATE", "changedFields": ["AccountId", "LastModifiedDate"], "changeOrigin": "com/salesforce/api/soap/47.0;client=SfdcInternalAPI/", "transactionKey": "000c6c88-b097-f5fb-0005-65d83dc022e5", "commitTimestamp": 1569407548000, "recordIds": ["50025000009vJE9AAM"] } }, "event": { "replayId": 103773372 } }
-    const changedFields: Array<string> = message.payload.ChangeEventHeader.changedFields
-    console.log(message.payload.ChangeEventHeader.recordIds + '\n =================')
-    changedFields.forEach(cf => console.log(`${cf}: ${message.payload[cf]}`))
+    // const changedFields: Array<string> = message.payload.ChangeEventHeader.changedFields
+    // console.log(message.payload.ChangeEventHeader.recordIds + '\n =================')
+    // changedFields.forEach(cf => console.log(`${cf}: ${message.payload[cf]}`))
+    // console.log(message)
+    console.log(`📰 ${message.sobject.ApplicationId__c || message.sobject.Id} status has changed to: ${message.sobject.Status}`)
   }
 
   async subscribeToChannel(channel: string) {

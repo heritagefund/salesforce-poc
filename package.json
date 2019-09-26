@@ -39,7 +39,7 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/gidsg/portal-cli",
+  "homepage": "https://github.com/heritagefund/salesforce-poc",
   "keywords": [
     "oclif"
   ],
