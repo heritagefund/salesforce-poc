@@ -3,6 +3,7 @@ Salesforce integration proof-of-concept
 ## Running locally
 ### Prerequisites
 populate `.env.sample` and rename to `.env`
+
 `yarn install`
 
 ### POSTing data
