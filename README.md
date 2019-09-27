@@ -9,6 +9,7 @@ populate `.env.sample` and rename to `.env`
 `./bin/run`
 ### Reading event stream
 `brew install redis`
+
 Start Redis in a separate tab:
 `redis-server`
 
