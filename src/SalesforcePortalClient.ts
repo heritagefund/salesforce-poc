@@ -109,13 +109,7 @@ export class SalesforcePortalClient {
     const getAsync = promisify(redisClient.get).bind(redisClient);
     const setAsync = promisify(redisClient.set).bind(redisClient);
     const redisPromise: Promise<string> = getAsync(channel)
-    const minusOne = Promise.resolve(-1)
-    //@ts-ignore
-    const result = await Promise.allSettled([redisPromise, minusOne])
-
-    const firstResult = result.find((m: any) => (m.value != null))
-    console.log(firstResult)
-    const replayId = parseInt(firstResult.value)
+    const replayId: number = parseInt(await redisPromise) || -1 //get since last stored, or start with new events
     //@ts-ignore
     const replayExtension = new jsforce.StreamingExtension.Replay(channel, replayId)
     //@ts-ignore
@@ -123,6 +117,7 @@ export class SalesforcePortalClient {
     const conn = await this.login()
     //@ts-ignore
     const streamingClient = conn.streaming.createClient([replayExtension, authExtension])
+    console.log(`Replay ID is ${replayId}`)
     console.log('Starting subscription...')
   
 
