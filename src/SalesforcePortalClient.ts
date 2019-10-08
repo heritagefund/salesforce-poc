@@ -69,6 +69,7 @@ export class SalesforcePortalClient {
         "projecDifference": "More free text",
         "projectCommunity": "Even more free text",
         "projectOrgBestPlace": "Even more and more free text",
+        "projectAvailable": "Even more more more text",
         "projectOutcome1": "More and more and more free text",
         "projectOutcome2": "More and more and more free text",
         "projectOutcome3": "More and more and more free text",
