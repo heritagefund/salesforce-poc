@@ -40,8 +40,13 @@ export class SalesforcePortalClient {
     return this.login().then(l => l.instanceUrl)
   }
 
-  async postApexRest(projectTitle: string, organisationName: string, formType: string): Promise<any> {
-    return await this.login().then(l => l.apex.post('/loadData/', buildPayload(organisationName, projectTitle, formType)))
+  async postApexRest(formType: string, applicationId: string, projectTitle?: string, organisationName?: string): Promise<any> {
+    console.log(formType)
+    const payload = buildPayload(formType, applicationId, organisationName, projectTitle)
+    console.log(util.inspect(payload, {depth: 100}))
+
+    const endpoint = formType === '3-10k-grant' ? '/loadData' : '/loadforms/'
+    return await this.login().then(l => l.apex.post(endpoint, payload))
   }
 
 

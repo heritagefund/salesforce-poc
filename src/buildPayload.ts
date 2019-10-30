@@ -1,9 +1,9 @@
 export enum FormType {
     ThreeToTenGrant = "3-10k-grant",
-    PermissionToStart = "3-10k-grant",
+    PermissionToStart = "permission-to-start",
 }
 
-export function buildPayload(organisationName: string, projectName: string, formType: string) {
+export function buildPayload(formType: string, applicationId: string, organisationName?: string, projectName?: string) {
     console.log(formType)
     switch (formType) {
         case '3-10k-grant':
@@ -15,7 +15,7 @@ export function buildPayload(organisationName: string, projectName: string, form
                     "commitId": "b4ecf18eae01d34b296e9388f387cc42bf7c0f93",
                     "locale": "en",
                     "username": "example@example.com",
-                    "applicationId": "a9bffed0-e131-11e9-880f-31a49a4bf599",
+                    "applicationId": applicationId,
                     "startedAt": "2019-05-17T15:34:13.000Z"
                 },
                 "application": {
@@ -76,13 +76,13 @@ export function buildPayload(organisationName: string, projectName: string, form
             case 'permission-to-start': 
             return {
                 "meta": {
-                    "form": "permission-to-start",
+                    "form": "Permission-to-start",
                     "schemaVersion": "v1.x",
                     "environment": "production",
                     "commitId": "b4ecf18eae01d34b296e9388f387cc42bf7c0f93",
                     "locale": "en",
                     "username": "example@example.com",
-                    "applicationId": "9453d770-e450-11e9-b3b6-212ded63c337",
+                    "applicationId": applicationId,
                     "startedAt": "2019-05-17T15:34:13.000Z"
                 },
                 "application": {

@@ -4,6 +4,7 @@ import { SalesforcePortalClient } from './SalesforcePortalClient'
 import './lib/env'
 import * as inquirer from 'inquirer'
 import { FormType } from './buildPayload'
+import uuid = require('uuid')
 
 
 
@@ -14,15 +15,30 @@ class PortalCli extends Command {
     this.log('hello world')
     this.log('welcome to the Portal 🏛')
     this.log('=========================')
-    const projectTitle: string = await cli.prompt('Project title')
-    const organisationName: string = await cli.prompt('Organisation name')
-    const prompt = await inquirer.prompt([{
+    const promptNewOrExisting = await inquirer.prompt([{
+      name: 'newOrExisting',
+      type: 'list',
+      choices: [{ name: 'new' }, { name: 'existing' }]
+    }])
+    const applicationId = await promptNewOrExisting.newOrExisting === 'existing' ? await cli.prompt('applicationId') : uuid()
+    const promptFormType = await inquirer.prompt([{
       name: 'formType',
       type: 'list',
       choices: [{ name: '3-10k-grant' }, { name: 'permission-to-start' }]
     }])
+    console.log()
+    let projectTitle
+    let organisationName
+    if (promptFormType.formType === '3-10k-grant') {
+      projectTitle = await cli.prompt('Project title')
+      organisationName = await cli.prompt('Organisation name')
+    }
+
+
+
     // await Promise.all([sfClient.getInstanceId(), sfClient.postApexRest(projectTitle, organisationName, formTypeEnum)]).then(p => this.log(`${p[0]}/${JSON.parse(p[1]).caseId}`))
-    await Promise.all([sfClient.getInstanceId(), sfClient.postApexRest(projectTitle, organisationName, prompt.formType)]).then(p => this.log(`${p[0]}/${JSON.parse(p[1]).caseId}`))
+    console.log(promptFormType.formType)
+    await Promise.all([sfClient.getInstanceId(), sfClient.postApexRest(promptFormType.formType, applicationId, projectTitle, organisationName,)]).then(p => this.log(p[1]))
   }
 }
 
