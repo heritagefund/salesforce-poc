@@ -1,11 +1,12 @@
-enum FormType {
+export enum FormType {
     ThreeToTenGrant = "3-10k-grant",
-    PermissionToStart = "permission-to-start",
+    PermissionToStart = "3-10k-grant",
 }
 
-export default function buildPayload(organisationName: string, projectName: string, formType: FormType = FormType.ThreeToTenGrant) {
+export function buildPayload(organisationName: string, projectName: string, formType: string) {
+    console.log(formType)
     switch (formType) {
-        case FormType.ThreeToTenGrant:
+        case '3-10k-grant':
             return {
                 "meta": {
                     "form": "3-10k-grant",
@@ -72,7 +73,8 @@ export default function buildPayload(organisationName: string, projectName: stri
                     "authorisedSignatoryEmail": "jane@example.com"
                 }
             }
-            case FormType.PermissionToStart: return {
+            case 'permission-to-start': 
+            return {
                 "meta": {
                     "form": "permission-to-start",
                     "schemaVersion": "v1.x",

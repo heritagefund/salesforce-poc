@@ -3,7 +3,8 @@ import uuid = require('uuid/v1')
 import util = require('util');
 import redis = require('redis')
 import { promisify } from 'util'
-import buildPayload from './buildPayload'
+import {buildPayload, FormType} from './buildPayload'
+
 
 export class SalesforcePortalClient {
   salesforceConsumerKey: string;
@@ -39,8 +40,8 @@ export class SalesforcePortalClient {
     return this.login().then(l => l.instanceUrl)
   }
 
-  async postApexRest(projectTitle: string, organisationName: string): Promise<any> {
-    return await this.login().then(l => l.apex.post('/loadData/', buildPayload(organisationName, projectTitle)))
+  async postApexRest(projectTitle: string, organisationName: string, formType: string): Promise<any> {
+    return await this.login().then(l => l.apex.post('/loadData/', buildPayload(organisationName, projectTitle, formType)))
   }
 
 
