@@ -24,9 +24,8 @@ class PortalCli extends Command {
     const promptFormType = await inquirer.prompt([{
       name: 'formType',
       type: 'list',
-      choices: [{ name: '3-10k-grant' }, { name: 'permission-to-start' }]
+      choices: [{ name: '3-10k-grant' }, { name: 'permission-to-start' }, {name: 'completion-report'}]
     }])
-    console.log()
     let projectTitle
     let organisationName
     if (promptFormType.formType === '3-10k-grant') {

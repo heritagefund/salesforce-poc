@@ -41,12 +41,23 @@ export class SalesforcePortalClient {
   }
 
   async postApexRest(formType: string, applicationId: string, projectTitle?: string, organisationName?: string): Promise<any> {
-    console.log(formType)
     const payload = buildPayload(formType, applicationId, organisationName, projectTitle)
     console.log(util.inspect(payload, {depth: 100}))
 
-    const endpoint = formType === '3-10k-grant' ? '/loadData' : '/loadforms/'
-    return await this.login().then(l => l.apex.post(endpoint, payload))
+    
+    const endpoint: () => string = () => {
+      switch(formType) {
+      case '3-10k-grant': 
+        return '/loadData'  
+      case 'permission-to-start': 
+        return '/loadforms'
+      case 'completion-report':
+         return '/loadApprovals'
+      default: 
+        throw new Error('unknown type')
+    }
+  }
+    return await this.login().then(l => l.apex.post(endpoint(), payload))
   }
 
 
