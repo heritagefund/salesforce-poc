@@ -30,7 +30,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                         "county": "Berkshire"
                     },
                     "yourIdeaProject": "Free text…",
-                    "projecDifference": "More free text",
+                    "projectDifference": "More free text",
                     "projectCommunity": "Even more free text",
                     "projectOrgBestPlace": "Even more and more free text",
                     "projectAvailable": "Even more more more text",
