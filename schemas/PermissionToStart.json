@@ -97,7 +97,7 @@
           "startedAt": {
             "$id": "#/properties/meta/properties/startedAt",
             "type": "string",
-            "title": "The Startedat Schema",
+            "title": "The Started at Schema",
             "default": "",
             "examples": [
               "2019-05-17T15:34:13.000Z"
@@ -153,7 +153,7 @@
             "title": "The Permissions Schema",
             "items": {
               "$id": "#/properties/application/properties/permissions/items",
-              "type": "object",
+              "type": ["object", "null"],
               "title": "The Items Schema",
               "required": [
                 "permissionType",
@@ -174,20 +174,20 @@
                 "anticipatedDate": {
                   "$id": "#/properties/application/properties/permissions/items/properties/anticipatedDate",
                   "type": "string",
-                  "title": "The Anticipateddate Schema",
+                  "title": "The Anticipated date Schema",
                   "default": "",
                   "examples": [
                     "2019-01-01"
                   ],
-                  "pattern": "^(.*)$"
+                  "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
                 },
                 "receivedDate": {
                   "$id": "#/properties/application/properties/permissions/items/properties/receivedDate",
                   "type": "string",
-                  "title": "The Receiveddate Schema",
+                  "title": "The Received date Schema",
                   "default": "",
                   "examples": [
-                    "2019-01-02"
+                    "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
                   ],
                   "pattern": "^(.*)$"
                 }
@@ -237,7 +237,7 @@
           "paymentReference": {
             "$id": "#/properties/application/properties/paymentReference",
             "type": "string",
-            "title": "The Paymentreference Schema",
+            "title": "The Payment reference Schema",
             "default": "",
             "examples": [
               "free text"
@@ -287,7 +287,8 @@
           "willAdvertise": {
             "$id": "#/properties/application/properties/willAdvertise",
             "type": "string",
-            "title": "The Willadvertise Schema",
+            "enum": ["notApplicable", "yes", "no"],
+            "title": "The Will advertise Schema",
             "default": "",
             "examples": [
               "notApplicable"
@@ -297,7 +298,8 @@
           "hasStatutoryPermissions": {
             "$id": "#/properties/application/properties/hasStatutoryPermissions",
             "type": "string",
-            "title": "The Hasstatutorypermissions Schema",
+            "enum": ["notApplicable", "yes", "no"],
+            "title": "The Has statutory permissions Schema",
             "default": "",
             "examples": [
               "Yes"
@@ -316,7 +318,7 @@
           "termsPersonName": {
             "$id": "#/properties/application/properties/termsPersonName",
             "type": "string",
-            "title": "The Termspersonname Schema",
+            "title": "The Terms person name Schema",
             "default": "",
             "examples": [
               "Jane"
@@ -326,7 +328,7 @@
           "termsPersonOrganisation": {
             "$id": "#/properties/application/properties/termsPersonOrganisation",
             "type": "string",
-            "title": "The Termspersonorganisation Schema",
+            "title": "The Terms person organisation Schema",
             "default": "",
             "examples": [
               "foo charity"
@@ -336,7 +338,7 @@
           "termsPersonPosition": {
             "$id": "#/properties/application/properties/termsPersonPosition",
             "type": "string",
-            "title": "The Termspersonposition Schema",
+            "title": "The Terms person position Schema",
             "default": "",
             "examples": [
               "free text"
