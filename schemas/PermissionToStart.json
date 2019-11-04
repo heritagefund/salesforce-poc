@@ -1,0 +1,412 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "meta",
+      "application"
+    ],
+    "properties": {
+      "meta": {
+        "$id": "#/properties/meta",
+        "type": "object",
+        "title": "The Meta Schema",
+        "required": [
+          "form",
+          "schemaVersion",
+          "environment",
+          "commitId",
+          "locale",
+          "username",
+          "applicationId",
+          "startedAt"
+        ],
+        "properties": {
+          "form": {
+            "$id": "#/properties/meta/properties/form",
+            "type": "string",
+            "title": "The Form Schema",
+            "default": "",
+            "examples": [
+              "Permission-to-start"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "schemaVersion": {
+            "$id": "#/properties/meta/properties/schemaVersion",
+            "type": "string",
+            "title": "The Schemaversion Schema",
+            "default": "",
+            "examples": [
+              "v1.x"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "environment": {
+            "$id": "#/properties/meta/properties/environment",
+            "type": "string",
+            "title": "The Environment Schema",
+            "default": "",
+            "examples": [
+              "production"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "commitId": {
+            "$id": "#/properties/meta/properties/commitId",
+            "type": "string",
+            "title": "The Commitid Schema",
+            "default": "",
+            "examples": [
+              "b4ecf18eae01d34b296e9388f387cc42bf7c0f93"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "locale": {
+            "$id": "#/properties/meta/properties/locale",
+            "type": "string",
+            "title": "The Locale Schema",
+            "default": "",
+            "examples": [
+              "en"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "username": {
+            "$id": "#/properties/meta/properties/username",
+            "type": "string",
+            "title": "The Username Schema",
+            "default": "",
+            "examples": [
+              "example@example.com"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "applicationId": {
+            "$id": "#/properties/meta/properties/applicationId",
+            "type": "string",
+            "title": "The Applicationid Schema",
+            "default": "",
+            "examples": [
+              "9453d770-e450-11e9-b3b6-212ded63c337"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "startedAt": {
+            "$id": "#/properties/meta/properties/startedAt",
+            "type": "string",
+            "title": "The Startedat Schema",
+            "default": "",
+            "examples": [
+              "2019-05-17T15:34:13.000Z"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      },
+      "application": {
+        "$id": "#/properties/application",
+        "type": "object",
+        "title": "The Application Schema",
+        "required": [
+          "proposedChanges",
+          "permissions",
+          "bankAccountName",
+          "bankAccountNumber",
+          "buildingSocietyNumber",
+          "bankAccountsortCode",
+          "paymentReference",
+          "signatory1",
+          "signatory2",
+          "signatory3",
+          "securedPartnershipFunding",
+          "willAdvertise",
+          "hasStatutoryPermissions",
+          "agreeTerms",
+          "termsPersonName",
+          "termsPersonOrganisation",
+          "termsPersonPosition",
+          "terms1",
+          "terms2",
+          "terms3",
+          "terms4",
+          "terms5",
+          "terms6",
+          "onBehalfOfPartnership"
+        ],
+        "properties": {
+          "proposedChanges": {
+            "$id": "#/properties/application/properties/proposedChanges",
+            "type": "string",
+            "title": "The Proposedchanges Schema",
+            "default": "",
+            "examples": [
+              "freeText"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "permissions": {
+            "$id": "#/properties/application/properties/permissions",
+            "type": "array",
+            "title": "The Permissions Schema",
+            "items": {
+              "$id": "#/properties/application/properties/permissions/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "permissionType",
+                "anticipatedDate",
+                "receivedDate"
+              ],
+              "properties": {
+                "permissionType": {
+                  "$id": "#/properties/application/properties/permissions/items/properties/permissionType",
+                  "type": "string",
+                  "title": "The Permissiontype Schema",
+                  "default": "",
+                  "examples": [
+                    "free text"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "anticipatedDate": {
+                  "$id": "#/properties/application/properties/permissions/items/properties/anticipatedDate",
+                  "type": "string",
+                  "title": "The Anticipateddate Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-01-01"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "receivedDate": {
+                  "$id": "#/properties/application/properties/permissions/items/properties/receivedDate",
+                  "type": "string",
+                  "title": "The Receiveddate Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-01-02"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "bankAccountName": {
+            "$id": "#/properties/application/properties/bankAccountName",
+            "type": "string",
+            "title": "The Bankaccountname Schema",
+            "default": "",
+            "examples": [
+              "free text"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "bankAccountNumber": {
+            "$id": "#/properties/application/properties/bankAccountNumber",
+            "type": "string",
+            "title": "The Bankaccountnumber Schema",
+            "default": "",
+            "examples": [
+              "12345678"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "buildingSocietyNumber": {
+            "$id": "#/properties/application/properties/buildingSocietyNumber",
+            "type": "string",
+            "title": "The Buildingsocietynumber Schema",
+            "default": "",
+            "examples": [
+              "12345678"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "bankAccountsortCode": {
+            "$id": "#/properties/application/properties/bankAccountsortCode",
+            "type": "string",
+            "title": "The Bankaccountsortcode Schema",
+            "default": "",
+            "examples": [
+              "12345678"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "paymentReference": {
+            "$id": "#/properties/application/properties/paymentReference",
+            "type": "string",
+            "title": "The Paymentreference Schema",
+            "default": "",
+            "examples": [
+              "free text"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "signatory1": {
+            "$id": "#/properties/application/properties/signatory1",
+            "type": "string",
+            "title": "The Signatory1 Schema",
+            "default": "",
+            "examples": [
+              "Jane"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "signatory2": {
+            "$id": "#/properties/application/properties/signatory2",
+            "type": "string",
+            "title": "The Signatory2 Schema",
+            "default": "",
+            "examples": [
+              "John"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "signatory3": {
+            "$id": "#/properties/application/properties/signatory3",
+            "type": "string",
+            "title": "The Signatory3 Schema",
+            "default": "",
+            "examples": [
+              "David"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "securedPartnershipFunding": {
+            "$id": "#/properties/application/properties/securedPartnershipFunding",
+            "type": "string",
+            "title": "The Securedpartnershipfunding Schema",
+            "default": "",
+            "examples": [
+              "Yes"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "willAdvertise": {
+            "$id": "#/properties/application/properties/willAdvertise",
+            "type": "string",
+            "title": "The Willadvertise Schema",
+            "default": "",
+            "examples": [
+              "notApplicable"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "hasStatutoryPermissions": {
+            "$id": "#/properties/application/properties/hasStatutoryPermissions",
+            "type": "string",
+            "title": "The Hasstatutorypermissions Schema",
+            "default": "",
+            "examples": [
+              "Yes"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "agreeTerms": {
+            "$id": "#/properties/application/properties/agreeTerms",
+            "type": "boolean",
+            "title": "The Agreeterms Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "termsPersonName": {
+            "$id": "#/properties/application/properties/termsPersonName",
+            "type": "string",
+            "title": "The Termspersonname Schema",
+            "default": "",
+            "examples": [
+              "Jane"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "termsPersonOrganisation": {
+            "$id": "#/properties/application/properties/termsPersonOrganisation",
+            "type": "string",
+            "title": "The Termspersonorganisation Schema",
+            "default": "",
+            "examples": [
+              "foo charity"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "termsPersonPosition": {
+            "$id": "#/properties/application/properties/termsPersonPosition",
+            "type": "string",
+            "title": "The Termspersonposition Schema",
+            "default": "",
+            "examples": [
+              "free text"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "terms1": {
+            "$id": "#/properties/application/properties/terms1",
+            "type": "boolean",
+            "title": "The Terms1 Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "terms2": {
+            "$id": "#/properties/application/properties/terms2",
+            "type": "boolean",
+            "title": "The Terms2 Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "terms3": {
+            "$id": "#/properties/application/properties/terms3",
+            "type": "boolean",
+            "title": "The Terms3 Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "terms4": {
+            "$id": "#/properties/application/properties/terms4",
+            "type": "boolean",
+            "title": "The Terms4 Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "terms5": {
+            "$id": "#/properties/application/properties/terms5",
+            "type": "boolean",
+            "title": "The Terms5 Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "terms6": {
+            "$id": "#/properties/application/properties/terms6",
+            "type": "boolean",
+            "title": "The Terms6 Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "onBehalfOfPartnership": {
+            "$id": "#/properties/application/properties/onBehalfOfPartnership",
+            "type": "boolean",
+            "title": "The Onbehalfofpartnership Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          }
+        }
+      }
+    }
+  }
