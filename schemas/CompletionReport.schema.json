@@ -265,6 +265,7 @@
                 },
                 "taskCategory": {
                   "$id": "#/properties/application/properties/contributions/items/properties/taskCategory",
+                  "enum": ["volunteer", "skilledLabour", "nonCash", "professionalLabour"],
                   "type": "string",
                   "title": "The Taskcategory Schema",
                   "default": "",
