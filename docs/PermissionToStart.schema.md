@@ -1,4 +1,4 @@
-# The Root Schema Schema
+# permission to start Schema
 
 ```
 PermissionToStart.schema.json
@@ -8,12 +8,12 @@ PermissionToStart.schema.json
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | -------------------------------------------------------------- |
 | Can be instantiated | Yes        | Experimental | No           | Forbidden         | Permitted             | [PermissionToStart.schema.json](PermissionToStart.schema.json) |
 
-# The Root Schema Properties
+# permission to start Properties
 
 | Property                    | Type     | Required     | Nullable | Defined by                                 |
 | --------------------------- | -------- | ------------ | -------- | ------------------------------------------ |
-| [application](#application) | `object` | **Required** | No       | The Root Schema (this schema)              |
-| [meta](#meta)               | `object` | **Required** | No       | The Root Schema (this schema)              |
+| [application](#application) | `object` | **Required** | No       | permission to start (this schema)          |
+| [meta](#meta)               | `object` | **Required** | No       | permission to start (this schema)          |
 | `*`                         | any      | Additional   | Yes      | this schema _allows_ additional properties |
 
 ## application

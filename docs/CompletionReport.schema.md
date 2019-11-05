@@ -1,4 +1,4 @@
-# The Root Schema Schema
+# Completion Report Schema
 
 ```
 CompletionReport.schema.json
@@ -8,12 +8,12 @@ CompletionReport.schema.json
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | ------------------------------------------------------------ |
 | Can be instantiated | Yes        | Experimental | No           | Forbidden         | Permitted             | [CompletionReport.schema.json](CompletionReport.schema.json) |
 
-# The Root Schema Properties
+# Completion Report Properties
 
 | Property                    | Type     | Required     | Nullable | Defined by                                 |
 | --------------------------- | -------- | ------------ | -------- | ------------------------------------------ |
-| [application](#application) | `object` | **Required** | No       | The Root Schema (this schema)              |
-| [meta](#meta)               | `object` | **Required** | No       | The Root Schema (this schema)              |
+| [application](#application) | `object` | **Required** | No       | Completion Report (this schema)            |
+| [meta](#meta)               | `object` | **Required** | No       | Completion Report (this schema)            |
 | `*`                         | any      | Additional   | Yes      | this schema _allows_ additional properties |
 
 ## application

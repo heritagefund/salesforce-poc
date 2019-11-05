@@ -1,4 +1,4 @@
-# The Root Schema Schema
+# 3-10k application Schema
 
 ```
 application.schema.json
@@ -8,12 +8,12 @@ application.schema.json
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | -------------------------------------------------- |
 | Can be instantiated | Yes        | Experimental | No           | Forbidden         | Permitted             | [application.schema.json](application.schema.json) |
 
-# The Root Schema Properties
+# 3-10k application Properties
 
 | Property                    | Type     | Required     | Nullable | Defined by                                 |
 | --------------------------- | -------- | ------------ | -------- | ------------------------------------------ |
-| [application](#application) | `object` | **Required** | No       | The Root Schema (this schema)              |
-| [meta](#meta)               | `object` | **Required** | No       | The Root Schema (this schema)              |
+| [application](#application) | `object` | **Required** | No       | 3-10k application (this schema)            |
+| [meta](#meta)               | `object` | **Required** | No       | 3-10k application (this schema)            |
 | `*`                         | any      | Additional   | Yes      | this schema _allows_ additional properties |
 
 ## application
