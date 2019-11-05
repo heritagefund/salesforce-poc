@@ -7,8 +7,8 @@ jobs:
     - uses: actions/checkout@master
     - name: Generate schema
       run: |
-        npm install -g @adobe/jsonschema2md
-        jsonschema2md -d schemas/ -o docs/ -x false
+        yarn install
+        node ./node_modules/@adobe/jsonschema2md/cli.js -d schemas/ -o docs/ -x false
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
