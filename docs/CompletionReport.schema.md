@@ -281,20 +281,19 @@ All instances must conform to this regular expression
 `taskCategory`
 
 - is **required**
-- type: `string`
+- type: `enum`
 - default: `""`
 
-##### taskCategory Type
+The value of this property **must** be equal to one of the [known values below](#application-known-values).
 
-`string`
+##### taskCategory Known Values
 
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [volunteer](<https://regexr.com/?expression=%5E(.*)%24&text=volunteer>)
+| Value                | Description |
+| -------------------- | ----------- |
+| `volunteer`          |             |
+| `skilledLabour`      |             |
+| `nonCash`            |             |
+| `professionalLabour` |             |
 
 ##### taskCategory Example
 
