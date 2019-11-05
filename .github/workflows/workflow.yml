@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Generate schema
+        run: |
+          yarn install
+          node ./node_modules/@adobe/jsonschema2md/cli.js -d schemas/ -o docs/ -x false
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Docs generator bot"
+          git add docs/
+          git commit -m "Add generated docs"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
