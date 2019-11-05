@@ -10,9 +10,7 @@ jobs:
       - name: Generate schema
         run: |
           yarn install
-          git checkout docs --no-guess
-          git checkout master -- schemas/
-          node ./node_modules/@adobe/jsonschema2md/cli.js -d schemas/ -o docs/
+          node ./node_modules/@adobe/jsonschema2md/cli.js -d schemas/ -o docs/ -x false
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
@@ -22,5 +20,4 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          branch: docs
           github_token: ${{ secrets.GITHUB_TOKEN }}
