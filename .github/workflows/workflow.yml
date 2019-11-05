@@ -25,4 +25,3 @@ jobs:
         with:
           branch: docs
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
