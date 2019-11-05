@@ -112,13 +112,7 @@
         "title": "The Application Schema",
         "required": [
           "summaryOfAcheivements",
-          "changesToApprovedPurposes",
           "howProjectAcheivedOutcomes",
-          "contributions",
-          "staff",
-          "staffLinked",
-          "howCostsSpent",
-          "explainSpendingChanges",
           "fundingAcknowledgement",
           "completedEvaluation"
         ],
@@ -192,7 +186,7 @@
                   "examples": [
                     "2019-01-01"
                   ],
-                  "pattern": "^(.*)$"
+                  "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
                 },
                 "dateOfReply": {
                   "$id": "#/properties/application/properties/changesToApprovedPurposes/items/properties/dateOfReply",
