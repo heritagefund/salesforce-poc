@@ -3,7 +3,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CompletionReport.schema.json",
     "type": "object",
-    "title": "completion report",
+    "title": "Completion Report",
     "required": [
       "meta",
       "application"
