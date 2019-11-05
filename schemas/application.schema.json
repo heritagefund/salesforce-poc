@@ -3,7 +3,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "application.schema.json",
     "type": "object",
-    "title": "The Root Schema",
+    "title": "3-10k application",
     "required": [
       "meta",
       "application"
