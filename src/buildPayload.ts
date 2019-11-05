@@ -1,3 +1,5 @@
+import uuid = require('uuid')
+
 export enum FormType {
     ThreeToTenGrant = "3-10k-grant",
     PermissionToStart = "permission-to-start",
@@ -44,7 +46,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "projectOutcome8": "More and more and more free text",
                     "projectOutcome9": null,
                     "projectTotalCosts": 20000,
-                    "organisationId": "c23e12e0-e69e-11e9-aaf2-2514879727cc",
+                    "organisationId": uuid(),
                     "organisationName": organisationName,
                     "organisationAddress": {
                         "line1": "82553 Demarco Rapid",
@@ -52,11 +54,11 @@ export function buildPayload(formType: string, applicationId: string, organisati
                         "county": "Berkshire",
                         "postcode": "B15 1TR"
                     },
-                    "organisationType": "not-for-profit-company",
+                    "organisationType": "local-authority",
                     "companyNumber": "123456789",
                     "charityNumber": null,
                     "charityNumberNi": null,
-                    "mainContactName": "Nelda",
+                    "mainContactName": "Jane Foo",
                     "mainContactDateOfBirth": "1975-10-12",
                     "mainContactAddress": {
                         "line1": "41465 Bashirian Oval",
@@ -67,7 +69,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "mainContactEmail": "Lizzie90@example.com",
                     "mainContactPhone": "0345 4 10 20 30",
                     "authorisedSignatoryRole": "trustee",
-                    "authorisedSignatoryName": "Jane Doe",
+                    "authorisedSignatoryName": "Jane Bar",
                     "authorisedSignatoryPhone": "07777 777777",
                     "authorisedSignatoryEmail": "jane@example.com"
                 }
