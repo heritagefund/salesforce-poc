@@ -17,5 +17,3 @@ Start Redis in a separate tab:
 `yarn install`
 
 `npm run stream`
-
-
