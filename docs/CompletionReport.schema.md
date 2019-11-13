@@ -32,15 +32,15 @@ CompletionReport.schema.json
 
 | Property                     | Type        | Required     | Default |
 | ---------------------------- | ----------- | ------------ | ------- |
-| `changesToApprovedPurposes`  | array       | **Required** |         |
+| `changesToApprovedPurposes`  | array       | Optional     |         |
 | `completedEvaluation`        | string      | **Required** | `""`    |
-| `contributions`              | array       | **Required** |         |
-| `explainSpendingChanges`     | string,null | **Required** | `""`    |
+| `contributions`              | array       | Optional     |         |
+| `explainSpendingChanges`     | string,null | Optional     | `""`    |
 | `fundingAcknowledgement`     | string      | **Required** | `""`    |
-| `howCostsSpent`              | array       | **Required** |         |
+| `howCostsSpent`              | array       | Optional     |         |
 | `howProjectAcheivedOutcomes` | string      | **Required** | `""`    |
-| `staff`                      | array       | **Required** |         |
-| `staffLinked`                | string      | **Required** | `""`    |
+| `staff`                      | array       | Optional     |         |
+| `staffLinked`                | string      | Optional     | `""`    |
 | `summaryOfAcheivements`      | array       | **Required** |         |
 
 #### changesToApprovedPurposes
@@ -49,7 +49,7 @@ CompletionReport.schema.json
 
 `changesToApprovedPurposes`
 
-- is **required**
+- is optional
 - type: `object[]`
 
 ##### changesToApprovedPurposes Type
@@ -110,10 +110,10 @@ All instances must conform to this regular expression
 All instances must conform to this regular expression
 
 ```regex
-^(.*)$
+^\d\d\d\d-\d\d-\d\d$
 ```
 
-- test example: [2019-01-01](<https://regexr.com/?expression=%5E(.*)%24&text=2019-01-01>)
+- test example: [2019-01-01](https://regexr.com/?expression=%5E%5Cd%5Cd%5Cd%5Cd-%5Cd%5Cd-%5Cd%5Cd%24&text=2019-01-01)
 
 ##### dateOfRequest Example
 
@@ -209,7 +209,7 @@ Yes
 
 `contributions`
 
-- is **required**
+- is optional
 - type: `object[]`
 
 ##### contributions Type
@@ -355,7 +355,7 @@ free text
 
 `explainSpendingChanges`
 
-- is **required**
+- is optional
 - type: `string`
 - default: `""`
 
@@ -413,7 +413,7 @@ free text
 
 `howCostsSpent`
 
-- is **required**
+- is optional
 - type: `object[]`
 
 ##### howCostsSpent Type
@@ -617,7 +617,7 @@ Free text
 
 `staff`
 
-- is **required**
+- is optional
 - type: `object[]`
 
 ##### staff Type
@@ -743,7 +743,7 @@ free text
 
 `staffLinked`
 
-- is **required**
+- is optional
 - type: `string`
 - default: `""`
 
