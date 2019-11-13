@@ -195,7 +195,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "staffLinked": "Yes",
                     "howCostsSpent": [
                         {
-                            "costHeading": "free text",
+                            "costHeading": "Professional fees",
                             "invoiceReference": "free text",
                             "invoiceDate": "2019-01-01",
                             "description": "free text",
@@ -203,7 +203,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                             "totalCostClaimed": 2000
                         },
                         {
-                            "costHeading": "free text 2",
+                            "costHeading": "New staff costs",
                             "invoiceReference": "free text",
                             "invoiceDate": "2019-01-01",
                             "description": "free text",
