@@ -438,25 +438,48 @@ All items must be of the type: `object`, nullable, with following properties:
 `costHeading`
 
 - is **required**
-- type: `string`
+- type: `enum`
 - default: `""`
 
-##### costHeading Type
+The value of this property **must** be equal to one of the [known values below](#application-known-values).
 
-`string`
+##### costHeading Known Values
 
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [free text](<https://regexr.com/?expression=%5E(.*)%24&text=free%20text>)
+| Value                                                  | Description |
+| ------------------------------------------------------ | ----------- |
+| `professional-fees`                                    |             |
+| `new-staff-costs`                                      |             |
+| `opening-up-work-surveys`                              |             |
+| `capacity-building-activity`                           |             |
+| `other-cost-development-phase`                         |             |
+| `non-cash-contributions`                               |             |
+| `volunteer-time`                                       |             |
+| `purchase-price-heritage-items`                        |             |
+| `repair-and-conservation-work`                         |             |
+| `new-build-work`                                       |             |
+| `digital-outputs`                                      |             |
+| `equipment-and-materials-including-learning-materials` |             |
+| `training-for-staff`                                   |             |
+| `training-for-volunteers`                              |             |
+| `travel-and-expenses-for-staff`                        |             |
+| `travel-and-expenses-for-volunteers`                   |             |
+| `expenses-for-staff`                                   |             |
+| `expenses-for-volunteers`                              |             |
+| `event-costs`                                          |             |
+| `community-grants`                                     |             |
+| `publicity-and-promotion`                              |             |
+| `full-cost-recovery`                                   |             |
+| `professional-fees-relating-to-any-of-the-above`       |             |
+| `paid-training-placements`                             |             |
+| `recruitment`                                          |             |
+| `other`                                                |             |
+| `evaluation`                                           |             |
+| `contingency`                                          |             |
 
 ##### costHeading Example
 
 ```json
-free text
+professional - fees
 ```
 
 #### description
