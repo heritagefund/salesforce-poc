@@ -54,7 +54,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                         "county": "Berkshire",
                         "postcode": "B15 1TR"
                     },
-                    "organisationType": "local-authority",
+                    "organisationType": "other-public-sector-organisation",
                     "companyNumber": "123456789",
                     "charityNumber": null,
                     "charityNumberNi": null,
@@ -195,7 +195,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "staffLinked": "Yes",
                     "howCostsSpent": [
                         {
-                            "costHeading": "Professional fees",
+                            "costHeading": "professional-fees",
                             "invoiceReference": "free text",
                             "invoiceDate": "2019-01-01",
                             "description": "free text",

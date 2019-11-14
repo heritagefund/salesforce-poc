@@ -448,7 +448,7 @@
             "title": "organisation type",
             "default": "",
             "examples": [
-              "not-for-profit-company"
+              "local-authority"
             ],
             "pattern": "^(.*)$"
           },

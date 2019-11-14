@@ -48,7 +48,7 @@ export class SalesforcePortalClient {
     const endpoint: () => string = () => {
       switch(formType) {
       case '3-10k-grant': 
-        return '/loadData'  
+        return '/PortalData'  
       case 'permission-to-start': 
         return '/loadforms'
       case 'completion-report':
