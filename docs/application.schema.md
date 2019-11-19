@@ -267,12 +267,14 @@ All instances must conform to this regular expression
 
 `object` with following properties:
 
-| Property   | Type   | Required     | Default |
-| ---------- | ------ | ------------ | ------- |
-| `county`   | string | **Required** | `""`    |
-| `line1`    | string | **Required** | `""`    |
-| `postcode` | string | **Required** | `""`    |
-| `townCity` | string | **Required** | `""`    |
+| Property   | Type        | Required     | Default |
+| ---------- | ----------- | ------------ | ------- |
+| `county`   | string      | **Required** | `""`    |
+| `line1`    | string      | **Required** | `""`    |
+| `line2`    | string,null | Optional     | `""`    |
+| `line3`    | string,null | Optional     | `""`    |
+| `postcode` | string      | **Required** | `""`    |
+| `townCity` | string      | **Required** | `""`    |
 
 #### county
 
@@ -328,6 +330,62 @@ All instances must conform to this regular expression
 
 ```json
 41465 Bashirian Oval
+```
+
+#### line2
+
+##### The Line2 Schema
+
+`line2`
+
+- is optional
+- type: `string`
+- default: `""`
+
+##### line2 Type
+
+`string`, nullable
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Foo Street](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20Street>)
+
+##### line2 Example
+
+```json
+Foo Street
+```
+
+#### line3
+
+##### The Line3 Schema
+
+`line3`
+
+- is optional
+- type: `string`
+- default: `""`
+
+##### line3 Type
+
+`string`, nullable
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Foo lane](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20lane>)
+
+##### line3 Example
+
+```json
+Foo lane
 ```
 
 #### postcode
@@ -511,12 +569,14 @@ All instances must conform to this regular expression
 
 `object` with following properties:
 
-| Property   | Type   | Required     | Default |
-| ---------- | ------ | ------------ | ------- |
-| `county`   | string | **Required** | `""`    |
-| `line1`    | string | **Required** | `""`    |
-| `postcode` | string | **Required** | `""`    |
-| `townCity` | string | **Required** | `""`    |
+| Property   | Type        | Required     | Default |
+| ---------- | ----------- | ------------ | ------- |
+| `county`   | string      | **Required** | `""`    |
+| `line1`    | string      | **Required** | `""`    |
+| `line2`    | string,null | Optional     | `""`    |
+| `line3`    | string,null | Optional     | `""`    |
+| `postcode` | string      | **Required** | `""`    |
+| `townCity` | string      | **Required** | `""`    |
 
 #### county
 
@@ -572,6 +632,62 @@ All instances must conform to this regular expression
 
 ```json
 82553 Demarco Rapid
+```
+
+#### line2
+
+##### The Line2 Schema
+
+`line2`
+
+- is optional
+- type: `string`
+- default: `""`
+
+##### line2 Type
+
+`string`, nullable
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Foo Street](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20Street>)
+
+##### line2 Example
+
+```json
+Foo Street
+```
+
+#### line3
+
+##### The Line3 Schema
+
+`line3`
+
+- is optional
+- type: `string`
+- default: `""`
+
+##### line3 Type
+
+`string`, nullable
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Foo lane](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20lane>)
+
+##### line3 Example
+
+```json
+Foo lane
 ```
 
 #### postcode
@@ -702,12 +818,14 @@ local - authority
 
 `object` with following properties:
 
-| Property          | Type   | Required     | Default |
-| ----------------- | ------ | ------------ | ------- |
-| `county`          | string | **Required** | `""`    |
-| `line1`           | string | **Required** | `""`    |
-| `projectPostcode` | string | **Required** | `""`    |
-| `townCity`        | string | **Required** | `""`    |
+| Property          | Type        | Required     | Default |
+| ----------------- | ----------- | ------------ | ------- |
+| `county`          | string      | **Required** | `""`    |
+| `line1`           | string      | **Required** | `""`    |
+| `line2`           | string,null | Optional     | `""`    |
+| `line3`           | string,null | Optional     | `""`    |
+| `projectPostcode` | string      | **Required** | `""`    |
+| `townCity`        | string      | **Required** | `""`    |
 
 #### county
 
@@ -763,6 +881,62 @@ All instances must conform to this regular expression
 
 ```json
 82553 Demarco Rapid
+```
+
+#### line2
+
+##### The Line2 Schema
+
+`line2`
+
+- is optional
+- type: `string`
+- default: `""`
+
+##### line2 Type
+
+`string`, nullable
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Foo Street](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20Street>)
+
+##### line2 Example
+
+```json
+Foo Street
+```
+
+#### line3
+
+##### The Line3 Schema
+
+`line3`
+
+- is optional
+- type: `string`
+- default: `""`
+
+##### line3 Type
+
+`string`, nullable
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Foo lane](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20lane>)
+
+##### line3 Example
+
+```json
+Foo lane
 ```
 
 #### projectPostcode
