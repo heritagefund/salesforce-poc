@@ -686,7 +686,7 @@ The value of this property **must** be equal to one of the [known values below](
 ##### organisationType Example
 
 ```json
-not-for-profit-company
+local - authority
 ```
 
 #### projectAddress
