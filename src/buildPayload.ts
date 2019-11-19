@@ -28,6 +28,8 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "projectAddress": {
                         "projectPostcode": "B15 1TR",
                         "line1": "82553 Demarco Rapid",
+                        "line2": "Foo lane",
+                        "line3": "Bar street",
                         "townCity": "Waelchitown",
                         "county": "Berkshire"
                     },
@@ -50,6 +52,8 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "organisationName": organisationName,
                     "organisationAddress": {
                         "line1": "82553 Demarco Rapid",
+                        "line2": "Foo lane",
+                        "line3": "Bar street",
                         "townCity": "Waelchitown",
                         "county": "Berkshire",
                         "postcode": "B15 1TR"
@@ -62,6 +66,8 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "mainContactDateOfBirth": "1975-10-12",
                     "mainContactAddress": {
                         "line1": "41465 Bashirian Oval",
+                        "line2": "Foo lane",
+                        "line3": "Bar street",
                         "townCity": "Friesenhaven",
                         "county": "Berkshire",
                         "postcode": "B15 1TR"
