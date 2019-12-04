@@ -36,6 +36,9 @@
         "projectOutcome8": "More and more and more free text",
         "projectOutcome9": null,
         "projectTotalCosts": 20000,
+        "projectCosts": [
+
+        ],
         "organisationId": "c23e12e0-e69e-11e9-aaf2-2514879727cc",
         "organisationAddress": {
             "line1": "82553 Demarco Rapid",
