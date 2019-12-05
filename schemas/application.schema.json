@@ -410,7 +410,7 @@
                   "examples": [
                     "new-staff"
                   ],
-                  "enum": ["new-staff", "professional-fees", "purchase-price-of-heritage-items", "repair-and-conservation-work", "event-costs", "digital-outputs", "equipment-and-materials-including-learning-materials", "training-for-staff", "training-for-volunteers", "travel-for-staff", "travel-for-volunteers", "expenses-for-staff", "expenses-for-volunteers", "publicity-and-promotion"],
+                  "enum": ["new-staff", "professional-fees", "recruitment", "purchase-price-of-heritage-items", "repair-and-conservation-work", "event-costs", "digital-outputs", "equipment-and-materials-including-learning-materials", "training-for-staff", "training-for-volunteers", "travel-for-staff", "travel-for-volunteers", "expenses-for-staff", "expenses-for-volunteers", "other", "publicity-and-promotion", "evaluation", "contingency"],
                   "pattern": "^(.*)$"
                 },
                 "costDescription": {
