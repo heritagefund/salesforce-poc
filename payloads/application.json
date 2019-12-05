@@ -61,31 +61,33 @@
         "nonCashContributions": [
             {
                 "description": "Free text",
-                "estimatedValue": 1000
+                "estimatedValue": 1000,
+                "secured": "yes-with-evidence"
             },
             {
                 "description": "More free text",
-                "estimatedValue": 2000
+                "estimatedValue": 2000,
+                "secured": "not-sure"
             }
         ],
         "cashContributions": [
             {
-                "decription": "free text",
+                "description": "free text",
                 "secured": "yes-with-evidence",
                 "amount": 1000
             },
             {
-                "decription": "free text",
+                "description": "free text",
                 "secured": "no",
                 "amount": 1000
             },
             {
-                "decription": "free text",
+                "description": "free text",
                 "secured": "not-sure",
                 "amount": 1000
             },
             {
-                "decription": "free text",
+                "description": "free text",
                 "secured": "yes-no-evidence-yet",
                 "amount": 1000
             }
