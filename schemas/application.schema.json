@@ -546,6 +546,7 @@
                   "type": "string",
                   "title": "The Secured Schema",
                   "default": "",
+                  "enum": ["yes-with-evidence", "yes-no-evidence-yet", "no", "not-sure"],
                   "examples": [
                     "yes-with-evidence"
                   ],
