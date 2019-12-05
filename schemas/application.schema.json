@@ -388,15 +388,6 @@
               null
             ]
           },
-          "projectTotalCosts": {
-            "$id": "#/properties/application/properties/projectTotalCosts",
-            "type": "integer",
-            "title": "project total cost (in £)",
-            "default": 0,
-            "examples": [
-              20000
-            ]
-          },
           "projectCosts": {
             "$id": "#/properties/application/properties/projectCosts",
             "type": "array",
