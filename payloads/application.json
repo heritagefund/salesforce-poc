@@ -37,7 +37,66 @@
         "projectOutcome9": null,
         "projectTotalCosts": 20000,
         "projectCosts": [
-
+            {
+                "costType": "new-staff",
+                "costDescription": "Free text",
+                "costAmount": 1000
+            },
+            {
+                "costType": "professional-fees",
+                "costDescription": "Free text",
+                "costAmount": 1000
+            }
+        ],
+        "projectVolunteers": [
+            {
+                "description": "free text",
+                "hours": 10
+            },
+            {
+                "description": "more free text",
+                "hours": 20
+            }
+        ],
+        "nonCashContributions": [
+            {
+                "description": "Free text",
+                "estimatedValue": 1000
+            },
+            {
+                "description": "More free text",
+                "estimatedValue": 2000
+            }
+        ],
+        "cashContributions": [
+            {
+                "decription": "free text",
+                "secured": "yes-with-evidence",
+                "amount": 1000
+            },
+            {
+                "decription": "free text",
+                "secured": "no",
+                "amount": 1000
+            },
+            {
+                "decription": "free text",
+                "secured": "not-sure",
+                "amount": 1000
+            },
+            {
+                "decription": "free text",
+                "secured": "yes-no-evidence-yet",
+                "amount": 1000
+            }
+        ],
+        "evidenceOfSupport": [
+            {
+                "description": "free text"
+            },
+            {
+                "description": "more free text"
+            }
         ],
         "organisationId": "c23e12e0-e69e-11e9-aaf2-2514879727cc",
         "organisationAddress": {
