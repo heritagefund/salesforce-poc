@@ -36,20 +36,24 @@ application.schema.json
 | `authorisedSignatoryName`  | string      | **Required** | `""`    |
 | `authorisedSignatoryPhone` | string      | **Required** | `""`    |
 | `authorisedSignatoryRole`  | string      | **Required** | `""`    |
+| `cashContributions`        | array       | Optional     |         |
 | `charityNumber`            | null,string | Optional     | `null`  |
 | `charityNumberNi`          | null,string | Optional     | `null`  |
 | `companyNumber`            | string      | Optional     | `""`    |
+| `evidenceOfSupport`        | array       | Optional     |         |
 | `mainContactAddress`       | object      | **Required** |         |
 | `mainContactDateOfBirth`   | string      | **Required** | `""`    |
 | `mainContactEmail`         | string      | **Required** | `""`    |
 | `mainContactName`          | string      | **Required** | `""`    |
 | `mainContactPhone`         | string      | **Required** | `""`    |
+| `nonCashContributions`     | array       | Optional     |         |
 | `organisationAddress`      | object      | **Required** |         |
 | `organisationId`           | string      | **Required** | `""`    |
 | `organisationType`         | string      | **Required** | `""`    |
 | `projectAddress`           | object      | **Required** |         |
 | `projectAvailable`         | string      | **Required** | `""`    |
 | `projectCommunity`         | string      | **Required** | `""`    |
+| `projectCosts`             | array       | Optional     |         |
 | `projectDateRange`         | object      | **Required** |         |
 | `projectDifference`        | string      | **Required** | `""`    |
 | `projectName`              | string      | **Required** | `""`    |
@@ -63,7 +67,7 @@ application.schema.json
 | `projectOutcome7`          | string,null | Optional     | `""`    |
 | `projectOutcome8`          | string,null | Optional     | `""`    |
 | `projectOutcome9`          | string,null | Optional     | `null`  |
-| `projectTotalCosts`        | integer     | **Required** | `0`     |
+| `projectVolunteers`        | array       | Optional     |         |
 | `yourIdeaProject`          | string      | **Required** | `""`    |
 
 #### authorisedSignatoryEmail
@@ -178,6 +182,102 @@ All instances must conform to this regular expression
 trustee
 ```
 
+#### cashContributions
+
+##### The Cashcontributions Schema
+
+`cashContributions`
+
+- is optional
+- type: `object[]`
+
+##### cashContributions Type
+
+Array type: `object[]`
+
+All items must be of the type: `object` with following properties:
+
+| Property      | Type    | Required     | Default |
+| ------------- | ------- | ------------ | ------- |
+| `amount`      | integer | **Required** | `0`     |
+| `description` | string  | **Required** | `""`    |
+| `secured`     | string  | **Required** | `""`    |
+
+#### amount
+
+##### The Amount Schema
+
+`amount`
+
+- is **required**
+- type: `integer`
+- default: `0`
+
+##### amount Type
+
+`integer`
+
+##### amount Example
+
+```json
+1000
+```
+
+#### description
+
+##### The Description Schema
+
+`description`
+
+- is **required**
+- type: `string`
+- default: `""`
+
+##### description Type
+
+`string`
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [free text](<https://regexr.com/?expression=%5E(.*)%24&text=free%20text>)
+
+##### description Example
+
+```json
+free text
+```
+
+#### secured
+
+##### The Secured Schema
+
+`secured`
+
+- is **required**
+- type: `enum`
+- default: `""`
+
+The value of this property **must** be equal to one of the [known values below](#application-known-values).
+
+##### secured Known Values
+
+| Value                 | Description |
+| --------------------- | ----------- |
+| `yes-with-evidence`   |             |
+| `yes-no-evidence-yet` |             |
+| `no`                  |             |
+| `not-sure`            |             |
+
+##### secured Example
+
+```json
+yes-with-evidence
+```
+
 #### charityNumber
 
 ##### Charity Number
@@ -252,6 +352,53 @@ All instances must conform to this regular expression
 
 ```json
 123456789
+```
+
+#### evidenceOfSupport
+
+##### The Evidenceofsupport Schema
+
+`evidenceOfSupport`
+
+- is optional
+- type: `object[]`
+
+##### evidenceOfSupport Type
+
+Array type: `object[]`
+
+All items must be of the type: `object` with following properties:
+
+| Property      | Type   | Required     | Default |
+| ------------- | ------ | ------------ | ------- |
+| `description` | string | **Required** | `""`    |
+
+#### description
+
+##### The Description Schema
+
+`description`
+
+- is **required**
+- type: `string`
+- default: `""`
+
+##### description Type
+
+`string`
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [free text](<https://regexr.com/?expression=%5E(.*)%24&text=free%20text>)
+
+##### description Example
+
+```json
+free text
 ```
 
 #### mainContactAddress
@@ -554,6 +701,102 @@ All instances must conform to this regular expression
 
 ```json
 0345 4 10 20 30
+```
+
+#### nonCashContributions
+
+##### The Noncashcontributions Schema
+
+`nonCashContributions`
+
+- is optional
+- type: `object[]`
+
+##### nonCashContributions Type
+
+Array type: `object[]`
+
+All items must be of the type: `object` with following properties:
+
+| Property         | Type    | Required     | Default |
+| ---------------- | ------- | ------------ | ------- |
+| `description`    | string  | **Required** | `""`    |
+| `estimatedValue` | integer | **Required** | `0`     |
+| `secured`        | string  | **Required** | `""`    |
+
+#### description
+
+##### The Description Schema
+
+`description`
+
+- is **required**
+- type: `string`
+- default: `""`
+
+##### description Type
+
+`string`
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Free text](<https://regexr.com/?expression=%5E(.*)%24&text=Free%20text>)
+
+##### description Example
+
+```json
+Free text
+```
+
+#### estimatedValue
+
+##### The Estimatedvalue Schema
+
+`estimatedValue`
+
+- is **required**
+- type: `integer`
+- default: `0`
+
+##### estimatedValue Type
+
+`integer`
+
+##### estimatedValue Example
+
+```json
+1000
+```
+
+#### secured
+
+##### The Secured Schema
+
+`secured`
+
+- is **required**
+- type: `enum`
+- default: `""`
+
+The value of this property **must** be equal to one of the [known values below](#application-known-values).
+
+##### secured Known Values
+
+| Value                 | Description |
+| --------------------- | ----------- |
+| `yes-with-evidence`   |             |
+| `yes-no-evidence-yet` |             |
+| `no`                  |             |
+| `not-sure`            |             |
+
+##### secured Example
+
+```json
+yes-with-evidence
 ```
 
 #### organisationAddress
@@ -1052,6 +1295,116 @@ All instances must conform to this regular expression
 Even more free text
 ```
 
+#### projectCosts
+
+##### The Projectcosts Schema
+
+`projectCosts`
+
+- is optional
+- type: `object[]`
+
+##### projectCosts Type
+
+Array type: `object[]`
+
+All items must be of the type: `object` with following properties:
+
+| Property          | Type    | Required     | Default |
+| ----------------- | ------- | ------------ | ------- |
+| `costAmount`      | integer | **Required** | `0`     |
+| `costDescription` | string  | **Required** | `""`    |
+| `costType`        | string  | **Required** | `""`    |
+
+#### costAmount
+
+##### The Costamount Schema
+
+`costAmount`
+
+- is **required**
+- type: `integer`
+- default: `0`
+
+##### costAmount Type
+
+`integer`
+
+##### costAmount Example
+
+```json
+1000
+```
+
+#### costDescription
+
+##### The Costdescription Schema
+
+`costDescription`
+
+- is **required**
+- type: `string`
+- default: `""`
+
+##### costDescription Type
+
+`string`
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Free text](<https://regexr.com/?expression=%5E(.*)%24&text=Free%20text>)
+
+##### costDescription Example
+
+```json
+Free text
+```
+
+#### costType
+
+##### The Costtype Schema
+
+`costType`
+
+- is **required**
+- type: `enum`
+- default: `""`
+
+The value of this property **must** be equal to one of the [known values below](#application-known-values).
+
+##### costType Known Values
+
+| Value                                                  | Description |
+| ------------------------------------------------------ | ----------- |
+| `new-staff`                                            |             |
+| `professional-fees`                                    |             |
+| `recruitment`                                          |             |
+| `purchase-price-of-heritage-items`                     |             |
+| `repair-and-conservation-work`                         |             |
+| `event-costs`                                          |             |
+| `digital-outputs`                                      |             |
+| `equipment-and-materials-including-learning-materials` |             |
+| `training-for-staff`                                   |             |
+| `training-for-volunteers`                              |             |
+| `travel-for-staff`                                     |             |
+| `travel-for-volunteers`                                |             |
+| `expenses-for-staff`                                   |             |
+| `expenses-for-volunteers`                              |             |
+| `other`                                                |             |
+| `publicity-and-promotion`                              |             |
+| `evaluation`                                           |             |
+| `contingency`                                          |             |
+
+##### costType Example
+
+```json
+new-staff
+```
+
 #### projectDateRange
 
 ##### The Projectdaterange Schema
@@ -1463,24 +1816,72 @@ More and more and more free text
 
 ```
 
-#### projectTotalCosts
+#### projectVolunteers
 
-##### project total cost (in £)
+##### The Projectvolunteers Schema
 
-`projectTotalCosts`
+`projectVolunteers`
+
+- is optional
+- type: `object[]`
+
+##### projectVolunteers Type
+
+Array type: `object[]`
+
+All items must be of the type: `object` with following properties:
+
+| Property      | Type    | Required     | Default |
+| ------------- | ------- | ------------ | ------- |
+| `description` | string  | **Required** | `""`    |
+| `hours`       | integer | **Required** | `0`     |
+
+#### description
+
+##### The Description Schema
+
+`description`
+
+- is **required**
+- type: `string`
+- default: `""`
+
+##### description Type
+
+`string`
+
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [free text](<https://regexr.com/?expression=%5E(.*)%24&text=free%20text>)
+
+##### description Example
+
+```json
+free text
+```
+
+#### hours
+
+##### The Hours Schema
+
+`hours`
 
 - is **required**
 - type: `integer`
 - default: `0`
 
-##### projectTotalCosts Type
+##### hours Type
 
 `integer`
 
-##### projectTotalCosts Example
+##### hours Example
 
 ```json
-20000
+10
 ```
 
 #### yourIdeaProject
