@@ -599,6 +599,15 @@
             ],
             "pattern": "^(.*)$"
           },
+          "organisationMission": {
+            "$id": "#/properties/application/properties/organisationMission",
+            "type": "array",
+            "items": {"type": "string"},
+            "title": "Organisation Mission",
+            "default": "",
+            "enum": ["black-or-minority-ethnic-led", "disability-led", "lgbt+-led", "female-led", "young-people-led"],
+            "pattern": "^(.*)$"
+          },
           "organisationAddress": {
             "$id": "#/properties/application/properties/organisationAddress",
             "type": "object",
