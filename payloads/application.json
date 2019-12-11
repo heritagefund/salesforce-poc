@@ -128,9 +128,9 @@
         },
         "authorisedSignatoryTwoDetails": {
             "role": "trustee",
-            "name": "Jane Doe",
+            "name": "John Doe",
             "phone": "07777 777777",
-            "email": "jane@example.com"
+            "email": "jane@example.org"
         },
         "mainContactEmail": "Lizzie87@example.com",
         "mainContactPhone": "0345 4 10 20 30",
