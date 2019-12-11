@@ -49,6 +49,7 @@ application.schema.json
 | `nonCashContributions`     | array       | Optional     |         |
 | `organisationAddress`      | object      | **Required** |         |
 | `organisationId`           | string      | **Required** | `""`    |
+| `organisationMission`      | array       | Optional     | `""`    |
 | `organisationType`         | string      | **Required** | `""`    |
 | `projectAddress`           | object      | **Required** |         |
 | `projectAvailable`         | string      | **Required** | `""`    |
@@ -1017,6 +1018,28 @@ All instances must conform to this regular expression
 ```json
 c23e12e0-e69e-11e9-aaf2-2514879727cc
 ```
+
+#### organisationMission
+
+##### Organisation Mission
+
+`organisationMission`
+
+- is optional
+- type: `enum`
+- default: `""`
+
+The value of this property **must** be equal to one of the [known values below](#application-known-values).
+
+##### organisationMission Known Values
+
+| Value                          | Description |
+| ------------------------------ | ----------- |
+| `black-or-minority-ethnic-led` |             |
+| `disability-led`               |             |
+| `lgbt+-led`                    |             |
+| `female-led`                   |             |
+| `young-people-led`             |             |
 
 #### organisationType
 
