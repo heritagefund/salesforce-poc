@@ -101,6 +101,7 @@
         ],
         "organisationId": "c23e12e0-e69e-11e9-aaf2-2514879727cc",
         "organisationName": "Acme Corp",
+        "organisationMission": ["black-or-minority-ethnic-led", "disability-led", "lgbt+-led", "female-led", "young-people-led"],
         "organisationAddress": {
             "line1": "82553 Demarco Rapid",
             "townCity": "Waelchitown",
