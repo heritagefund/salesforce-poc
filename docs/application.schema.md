@@ -30,158 +30,168 @@ application.schema.json
 
 `object` with following properties:
 
-| Property                   | Type        | Required     | Default |
-| -------------------------- | ----------- | ------------ | ------- |
-| `authorisedSignatoryEmail` | string      | **Required** | `""`    |
-| `authorisedSignatoryName`  | string      | **Required** | `""`    |
-| `authorisedSignatoryPhone` | string      | **Required** | `""`    |
-| `authorisedSignatoryRole`  | string      | **Required** | `""`    |
-| `cashContributions`        | array       | Optional     |         |
-| `charityNumber`            | null,string | Optional     | `null`  |
-| `charityNumberNi`          | null,string | Optional     | `null`  |
-| `companyNumber`            | string      | Optional     | `""`    |
-| `evidenceOfSupport`        | array       | Optional     |         |
-| `mainContactAddress`       | object      | **Required** |         |
-| `mainContactDateOfBirth`   | string      | **Required** | `""`    |
-| `mainContactEmail`         | string      | **Required** | `""`    |
-| `mainContactName`          | string      | **Required** | `""`    |
-| `mainContactPhone`         | string      | **Required** | `""`    |
-| `nonCashContributions`     | array       | Optional     |         |
-| `organisationAddress`      | object      | **Required** |         |
-| `organisationId`           | string      | **Required** | `""`    |
-| `organisationMission`      | array       | Optional     | `""`    |
-| `organisationType`         | string      | **Required** | `""`    |
-| `projectAddress`           | object      | **Required** |         |
-| `projectAvailable`         | string      | **Required** | `""`    |
-| `projectCommunity`         | string      | **Required** | `""`    |
-| `projectCosts`             | array       | Optional     |         |
-| `projectDateRange`         | object      | **Required** |         |
-| `projectDifference`        | string      | **Required** | `""`    |
-| `projectName`              | string      | **Required** | `""`    |
-| `projectOrgBestPlace`      | string      | **Required** | `""`    |
-| `projectOutcome1`          | string      | **Required** | `""`    |
-| `projectOutcome2`          | string,null | Optional     | `""`    |
-| `projectOutcome3`          | string,null | Optional     | `""`    |
-| `projectOutcome4`          | string,null | Optional     | `""`    |
-| `projectOutcome5`          | string,null | Optional     | `""`    |
-| `projectOutcome6`          | string,null | Optional     | `""`    |
-| `projectOutcome7`          | string,null | Optional     | `""`    |
-| `projectOutcome8`          | string,null | Optional     | `""`    |
-| `projectOutcome9`          | string,null | Optional     | `null`  |
-| `projectVolunteers`        | array       | Optional     |         |
-| `yourIdeaProject`          | string      | **Required** | `""`    |
+| Property                        | Type        | Required     | Default |
+| ------------------------------- | ----------- | ------------ | ------- |
+| `authorisedSignatoryOneDetails` | object      | **Required** |         |
+| `authorisedSignatoryTwoDetails` | object      | **Required** |         |
+| `cashContributions`             | array       | Optional     |         |
+| `charityNumber`                 | null,string | Optional     | `null`  |
+| `charityNumberNi`               | null,string | Optional     | `null`  |
+| `companyNumber`                 | string      | Optional     | `""`    |
+| `evidenceOfSupport`             | array       | Optional     |         |
+| `mainContactAddress`            | object      | **Required** |         |
+| `mainContactDateOfBirth`        | string      | **Required** | `""`    |
+| `mainContactEmail`              | string      | **Required** | `""`    |
+| `mainContactName`               | string      | **Required** | `""`    |
+| `mainContactPhone`              | string      | **Required** | `""`    |
+| `nonCashContributions`          | array       | Optional     |         |
+| `organisationAddress`           | object      | **Required** |         |
+| `organisationId`                | string      | **Required** | `""`    |
+| `organisationName`              | string      | **Required** | `""`    |
+| `organisationType`              | string      | **Required** | `""`    |
+| `projectAddress`                | object      | **Required** |         |
+| `projectAvailable`              | string      | **Required** | `""`    |
+| `projectCommunity`              | string      | **Required** | `""`    |
+| `projectCosts`                  | array       | Optional     |         |
+| `projectDateRange`              | object      | **Required** |         |
+| `projectDifference`             | string      | **Required** | `""`    |
+| `projectName`                   | string      | **Required** | `""`    |
+| `projectOrgBestPlace`           | string      | **Required** | `""`    |
+| `projectOutcome1`               | string      | **Required** | `""`    |
+| `projectOutcome2`               | string,null | Optional     | `""`    |
+| `projectOutcome3`               | string,null | Optional     | `""`    |
+| `projectOutcome4`               | string,null | Optional     | `""`    |
+| `projectOutcome5`               | string,null | Optional     | `""`    |
+| `projectOutcome6`               | string,null | Optional     | `""`    |
+| `projectOutcome7`               | string,null | Optional     | `""`    |
+| `projectOutcome8`               | string,null | Optional     | `""`    |
+| `projectOutcome9`               | string,null | Optional     | `null`  |
+| `projectVolunteers`             | array       | Optional     |         |
+| `yourIdeaProject`               | string      | **Required** | `""`    |
 
-#### authorisedSignatoryEmail
+#### authorisedSignatoryOneDetails
 
-##### Authorised Signatory Email
+`authorisedSignatoryOneDetails`
 
-`authorisedSignatoryEmail`
+- is **required**
+- type: `object`
+
+##### authorisedSignatoryOneDetails Type
+
+`object` with following properties:
+
+| Property | Type   | Required     |
+| -------- | ------ | ------------ |
+| `email`  | string | **Required** |
+| `name`   | string | **Required** |
+| `phone`  | string | **Required** |
+| `role`   | string | **Required** |
+
+#### email
+
+`email`
 
 - is **required**
 - type: `string`
-- default: `""`
 
-##### authorisedSignatoryEmail Type
+##### email Type
 
 `string`
 
-All instances must conform to this regular expression
+#### name
 
-```regex
-^(.*)$
-```
-
-- test example: [jane@example.com](<https://regexr.com/?expression=%5E(.*)%24&text=jane%40example.com>)
-
-##### authorisedSignatoryEmail Example
-
-```json
-jane@example.com
-```
-
-#### authorisedSignatoryName
-
-##### Authorised Signatory Name
-
-`authorisedSignatoryName`
+`name`
 
 - is **required**
 - type: `string`
-- default: `""`
 
-##### authorisedSignatoryName Type
+##### name Type
 
 `string`
 
-All instances must conform to this regular expression
+#### phone
 
-```regex
-^(.*)$
-```
-
-- test example: [Jane Doe](<https://regexr.com/?expression=%5E(.*)%24&text=Jane%20Doe>)
-
-##### authorisedSignatoryName Example
-
-```json
-Jane Doe
-```
-
-#### authorisedSignatoryPhone
-
-##### Authorised Signatory Phone
-
-`authorisedSignatoryPhone`
+`phone`
 
 - is **required**
 - type: `string`
-- default: `""`
 
-##### authorisedSignatoryPhone Type
+##### phone Type
 
 `string`
 
-All instances must conform to this regular expression
+#### role
 
-```regex
-^(.*)$
-```
-
-- test example: [07777 777777](<https://regexr.com/?expression=%5E(.*)%24&text=07777%20777777>)
-
-##### authorisedSignatoryPhone Example
-
-```json
-07777 777777
-```
-
-#### authorisedSignatoryRole
-
-##### The Authorisedsignatoryrole Schema
-
-`authorisedSignatoryRole`
+`role`
 
 - is **required**
 - type: `string`
-- default: `""`
 
-##### authorisedSignatoryRole Type
+##### role Type
 
 `string`
 
-All instances must conform to this regular expression
+#### authorisedSignatoryTwoDetails
 
-```regex
-^(.*)$
-```
+`authorisedSignatoryTwoDetails`
 
-- test example: [trustee](<https://regexr.com/?expression=%5E(.*)%24&text=trustee>)
+- is **required**
+- type: `object`
 
-##### authorisedSignatoryRole Example
+##### authorisedSignatoryTwoDetails Type
 
-```json
-trustee
-```
+`object` with following properties:
+
+| Property | Type   | Required     |
+| -------- | ------ | ------------ |
+| `email`  | string | **Required** |
+| `name`   | string | **Required** |
+| `phone`  | string | **Required** |
+| `role`   | string | **Required** |
+
+#### email
+
+`email`
+
+- is **required**
+- type: `string`
+
+##### email Type
+
+`string`
+
+#### name
+
+`name`
+
+- is **required**
+- type: `string`
+
+##### name Type
+
+`string`
+
+#### phone
+
+`phone`
+
+- is **required**
+- type: `string`
+
+##### phone Type
+
+`string`
+
+#### role
+
+`role`
+
+- is **required**
+- type: `string`
+
+##### role Type
+
+`string`
 
 #### cashContributions
 
@@ -1019,27 +1029,33 @@ All instances must conform to this regular expression
 c23e12e0-e69e-11e9-aaf2-2514879727cc
 ```
 
-#### organisationMission
+#### organisationName
 
-##### Organisation Mission
+##### Organisation name
 
-`organisationMission`
+`organisationName`
 
-- is optional
-- type: `enum`
+- is **required**
+- type: `string`
 - default: `""`
 
-The value of this property **must** be equal to one of the [known values below](#application-known-values).
+##### organisationName Type
 
-##### organisationMission Known Values
+`string`
 
-| Value                          | Description |
-| ------------------------------ | ----------- |
-| `black-or-minority-ethnic-led` |             |
-| `disability-led`               |             |
-| `lgbt+-led`                    |             |
-| `female-led`                   |             |
-| `young-people-led`             |             |
+All instances must conform to this regular expression
+
+```regex
+^(.*)$
+```
+
+- test example: [Acme corp](<https://regexr.com/?expression=%5E(.*)%24&text=Acme%20corp>)
+
+##### organisationName Example
+
+```json
+Acme corp
+```
 
 #### organisationType
 
