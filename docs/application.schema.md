@@ -30,44 +30,51 @@ application.schema.json
 
 `object` with following properties:
 
-| Property                        | Type        | Required     | Default |
-| ------------------------------- | ----------- | ------------ | ------- |
-| `authorisedSignatoryOneDetails` | object      | **Required** |         |
-| `authorisedSignatoryTwoDetails` | object      | **Required** |         |
-| `cashContributions`             | array       | Optional     |         |
-| `charityNumber`                 | null,string | Optional     | `null`  |
-| `charityNumberNi`               | null,string | Optional     | `null`  |
-| `companyNumber`                 | string      | Optional     | `""`    |
-| `evidenceOfSupport`             | array       | Optional     |         |
-| `mainContactAddress`            | object      | **Required** |         |
-| `mainContactDateOfBirth`        | string      | **Required** | `""`    |
-| `mainContactEmail`              | string      | **Required** | `""`    |
-| `mainContactName`               | string      | **Required** | `""`    |
-| `mainContactPhone`              | string      | **Required** | `""`    |
-| `nonCashContributions`          | array       | Optional     |         |
-| `organisationAddress`           | object      | **Required** |         |
-| `organisationId`                | string      | **Required** | `""`    |
-| `organisationName`              | string      | **Required** | `""`    |
-| `organisationType`              | string      | **Required** | `""`    |
-| `projectAddress`                | object      | **Required** |         |
-| `projectAvailable`              | string      | **Required** | `""`    |
-| `projectCommunity`              | string      | **Required** | `""`    |
-| `projectCosts`                  | array       | Optional     |         |
-| `projectDateRange`              | object      | **Required** |         |
-| `projectDifference`             | string      | **Required** | `""`    |
-| `projectName`                   | string      | **Required** | `""`    |
-| `projectOrgBestPlace`           | string      | **Required** | `""`    |
-| `projectOutcome1`               | string      | **Required** | `""`    |
-| `projectOutcome2`               | string,null | Optional     | `""`    |
-| `projectOutcome3`               | string,null | Optional     | `""`    |
-| `projectOutcome4`               | string,null | Optional     | `""`    |
-| `projectOutcome5`               | string,null | Optional     | `""`    |
-| `projectOutcome6`               | string,null | Optional     | `""`    |
-| `projectOutcome7`               | string,null | Optional     | `""`    |
-| `projectOutcome8`               | string,null | Optional     | `""`    |
-| `projectOutcome9`               | string,null | Optional     | `null`  |
-| `projectVolunteers`             | array       | Optional     |         |
-| `yourIdeaProject`               | string      | **Required** | `""`    |
+| Property                        | Type         | Required     | Default |
+| ------------------------------- | ------------ | ------------ | ------- |
+| `authorisedSignatoryOneDetails` | object       | **Required** |         |
+| `authorisedSignatoryTwoDetails` | object       | **Required** |         |
+| `cashContributions`             | array        | Optional     |         |
+| `charityNumber`                 | null,string  | Optional     | `null`  |
+| `charityNumberNi`               | null,string  | Optional     | `null`  |
+| `companyNumber`                 | string       | Optional     | `""`    |
+| `evidenceOfSupport`             | array        | Optional     |         |
+| `mainContactAddress`            | object       | **Required** |         |
+| `mainContactDateOfBirth`        | string       | **Required** | `""`    |
+| `mainContactEmail`              | string       | **Required** | `""`    |
+| `mainContactName`               | string       | **Required** | `""`    |
+| `mainContactPhone`              | string       | **Required** | `""`    |
+| `nonCashContributions`          | array        | Optional     |         |
+| `organisationAddress`           | object       | **Required** |         |
+| `organisationId`                | string       | **Required** | `""`    |
+| `organisationName`              | string       | **Required** | `""`    |
+| `organisationType`              | string       | **Required** | `""`    |
+| `projectAddress`                | object       | **Required** |         |
+| `projectAvailable`              | string       | **Required** | `""`    |
+| `projectCommunity`              | string       | **Required** | `""`    |
+| `projectCosts`                  | array        | Optional     |         |
+| `projectDateRange`              | object       | **Required** |         |
+| `projectDifference`             | string       | **Required** | `""`    |
+| `projectName`                   | string       | **Required** | `""`    |
+| `projectOrgBestPlace`           | string       | **Required** | `""`    |
+| `projectOutcome1`               | string       | **Required** | `""`    |
+| `projectOutcome2`               | string,null  | Optional     | `""`    |
+| `projectOutcome2Checked`        | boolean,null | Optional     |         |
+| `projectOutcome3`               | string,null  | Optional     | `""`    |
+| `projectOutcome4`               | string,null  | Optional     | `""`    |
+| `projectOutcome4Checked`        | boolean,null | Optional     |         |
+| `projectOutcome5`               | string,null  | Optional     | `""`    |
+| `projectOutcome5Checked`        | boolean,null | Optional     |         |
+| `projectOutcome6`               | string,null  | Optional     | `""`    |
+| `projectOutcome6Checked`        | boolean,null | Optional     |         |
+| `projectOutcome7`               | string,null  | Optional     | `""`    |
+| `projectOutcome7Checked`        | boolean,null | Optional     |         |
+| `projectOutcome8`               | string,null  | Optional     | `""`    |
+| `projectOutcome8Checked`        | boolean,null | Optional     |         |
+| `projectOutcome9`               | string,null  | Optional     | `null`  |
+| `projectOutcome9Checked`        | boolean,null | Optional     |         |
+| `projectVolunteers`             | array        | Optional     |         |
+| `yourIdeaProject`               | string       | **Required** | `""`    |
 
 #### authorisedSignatoryOneDetails
 
@@ -1661,6 +1668,17 @@ All instances must conform to this regular expression
 More and more and more free text
 ```
 
+#### projectOutcome2Checked
+
+`projectOutcome2Checked`
+
+- is optional
+- type: `boolean`
+
+##### projectOutcome2Checked Type
+
+`boolean` , nullable
+
 #### projectOutcome3
 
 ##### The Projectoutcome3 Schema
@@ -1719,6 +1737,17 @@ All instances must conform to this regular expression
 More and more and more free text
 ```
 
+#### projectOutcome4Checked
+
+`projectOutcome4Checked`
+
+- is optional
+- type: `boolean`
+
+##### projectOutcome4Checked Type
+
+`boolean` , nullable
+
 #### projectOutcome5
 
 ##### The Projectoutcome5 Schema
@@ -1747,6 +1776,17 @@ All instances must conform to this regular expression
 ```json
 More and more and more free text
 ```
+
+#### projectOutcome5Checked
+
+`projectOutcome5Checked`
+
+- is optional
+- type: `boolean`
+
+##### projectOutcome5Checked Type
+
+`boolean` , nullable
 
 #### projectOutcome6
 
@@ -1777,6 +1817,17 @@ All instances must conform to this regular expression
 More and more and more free text
 ```
 
+#### projectOutcome6Checked
+
+`projectOutcome6Checked`
+
+- is optional
+- type: `boolean`
+
+##### projectOutcome6Checked Type
+
+`boolean` , nullable
+
 #### projectOutcome7
 
 ##### The Projectoutcome7 Schema
@@ -1805,6 +1856,17 @@ All instances must conform to this regular expression
 ```json
 More and more and more free text
 ```
+
+#### projectOutcome7Checked
+
+`projectOutcome7Checked`
+
+- is optional
+- type: `boolean`
+
+##### projectOutcome7Checked Type
+
+`boolean` , nullable
 
 #### projectOutcome8
 
@@ -1835,6 +1897,17 @@ All instances must conform to this regular expression
 More and more and more free text
 ```
 
+#### projectOutcome8Checked
+
+`projectOutcome8Checked`
+
+- is optional
+- type: `boolean`
+
+##### projectOutcome8Checked Type
+
+`boolean` , nullable
+
 #### projectOutcome9
 
 ##### The Projectoutcome9 Schema
@@ -1854,6 +1927,17 @@ More and more and more free text
 ```json
 
 ```
+
+#### projectOutcome9Checked
+
+`projectOutcome9Checked`
+
+- is optional
+- type: `boolean`
+
+##### projectOutcome9Checked Type
+
+`boolean` , nullable
 
 #### projectVolunteers
 
