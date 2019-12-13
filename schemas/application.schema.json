@@ -1,880 +1,972 @@
 {
-    "definitions": {},
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "application.schema.json",
-    "type": "object",
-    "title": "3-10k application",
-    "required": [
-      "meta",
-      "application"
-    ],
-    "properties": {
-      "meta": {
-        "$id": "#/properties/meta",
-        "type": "object",
-        "title": "metadata",
-        "required": [
-          "form",
-          "schemaVersion",
-          "environment",
-          "commitId",
-          "locale",
-          "username",
-          "applicationId",
-          "startedAt"
-        ],
-        "properties": {
-          "form": {
-            "$id": "#/properties/meta/properties/form",
-            "type": "string",
-            "title": "form type",
-            "default": "",
-            "examples": [
-              "3-10k-grant"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "schemaVersion": {
-            "$id": "#/properties/meta/properties/schemaVersion",
-            "type": "string",
-            "title": "The Schemaversion Schema",
-            "default": "",
-            "examples": [
-              "v1.x"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "environment": {
-            "$id": "#/properties/meta/properties/environment",
-            "type": "string",
-            "title": "The Environment Schema",
-            "default": "",
-            "examples": [
-              "production"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "commitId": {
-            "$id": "#/properties/meta/properties/commitId",
-            "type": "string",
-            "title": "git commit hash of application",
-            "default": "",
-            "examples": [
-              "b4ecf18eae01d34b296e9388f387cc42bf7c0f93"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "locale": {
-            "$id": "#/properties/meta/properties/locale",
-            "type": "string",
-            "title": "The Locale Schema",
-            "default": "",
-            "examples": [
-              "en"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "username": {
-            "$id": "#/properties/meta/properties/username",
-            "type": "string",
-            "title": "The Username Schema",
-            "default": "",
-            "examples": [
-              "example@example.com"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "applicationId": {
-            "$id": "#/properties/meta/properties/applicationId",
-            "type": "string",
-            "title": "The Applicationid Schema",
-            "default": "",
-            "examples": [
-              "9453d770-e450-11e9-b3b6-212ded63c337"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "startedAt": {
-            "$id": "#/properties/meta/properties/startedAt",
-            "type": "string",
-            "title": "The Startedat Schema",
-            "default": "",
-            "examples": [
-              "2019-05-17T15:34:13.000Z"
-            ],
-            "pattern": "^(.*)$"
-          }
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "application.schema.json",
+  "type": "object",
+  "title": "3-10k application",
+  "required": [
+    "meta",
+    "application"
+  ],
+  "properties": {
+    "meta": {
+      "$id": "#/properties/meta",
+      "type": "object",
+      "title": "metadata",
+      "required": [
+        "form",
+        "schemaVersion",
+        "environment",
+        "commitId",
+        "locale",
+        "username",
+        "applicationId",
+        "startedAt"
+      ],
+      "properties": {
+        "form": {
+          "$id": "#/properties/meta/properties/form",
+          "type": "string",
+          "title": "form type",
+          "default": "",
+          "examples": [
+            "3-10k-grant"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "schemaVersion": {
+          "$id": "#/properties/meta/properties/schemaVersion",
+          "type": "string",
+          "title": "The Schemaversion Schema",
+          "default": "",
+          "examples": [
+            "v1.x"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "environment": {
+          "$id": "#/properties/meta/properties/environment",
+          "type": "string",
+          "title": "The Environment Schema",
+          "default": "",
+          "examples": [
+            "production"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "commitId": {
+          "$id": "#/properties/meta/properties/commitId",
+          "type": "string",
+          "title": "git commit hash of application",
+          "default": "",
+          "examples": [
+            "b4ecf18eae01d34b296e9388f387cc42bf7c0f93"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "locale": {
+          "$id": "#/properties/meta/properties/locale",
+          "type": "string",
+          "title": "The Locale Schema",
+          "default": "",
+          "examples": [
+            "en"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "username": {
+          "$id": "#/properties/meta/properties/username",
+          "type": "string",
+          "title": "The Username Schema",
+          "default": "",
+          "examples": [
+            "example@example.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "applicationId": {
+          "$id": "#/properties/meta/properties/applicationId",
+          "type": "string",
+          "title": "The Applicationid Schema",
+          "default": "",
+          "examples": [
+            "9453d770-e450-11e9-b3b6-212ded63c337"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "startedAt": {
+          "$id": "#/properties/meta/properties/startedAt",
+          "type": "string",
+          "title": "The Startedat Schema",
+          "default": "",
+          "examples": [
+            "2019-05-17T15:34:13.000Z"
+          ],
+          "pattern": "^(.*)$"
         }
-      },
-      "application": {
-        "$id": "#/properties/application",
-        "type": "object",
-        "title": "The Application Schema",
-        "required": [
-          "projectName",
-          "projectDateRange",
-          "projectAddress",
-          "yourIdeaProject",
-          "projectDifference",
-          "projectCommunity",
-          "projectOrgBestPlace",
-          "projectAvailable",
-          "projectOutcome1",
-          "projectTotalCosts",
-          "organisationId",
-          "organisationAddress",
-          "organisationType",
-          "mainContactName",
-          "mainContactDateOfBirth",
-          "mainContactAddress",
-          "mainContactEmail",
-          "mainContactPhone",
-          "authorisedSignatoryRole",
-          "authorisedSignatoryName",
-          "authorisedSignatoryPhone",
-          "authorisedSignatoryEmail"
-        ],
-        "properties": {
-          "projectName": {
-            "$id": "#/properties/application/properties/projectName",
-            "type": "string",
-            "title": "The Projectname Schema",
-            "default": "",
-            "examples": [
-              "my project"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectDateRange": {
-            "$id": "#/properties/application/properties/projectDateRange",
-            "type": "object",
-            "title": "The Projectdaterange Schema",
-            "required": [
-              "startDate",
-              "endDate"
-            ],
-            "properties": {
-              "startDate": {
-                "$id": "#/properties/application/properties/projectDateRange/properties/startDate",
-                "type": "string",
-                "title": "Project Start Date",
-                "default": "",
-                "examples": [
-                  "2020-12-12"
-                ],
-                "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
-              },
-              "endDate": {
-                "$id": "#/properties/application/properties/projectDateRange/properties/endDate",
-                "type": "string",
-                "title": "Project end date",
-                "default": "",
-                "examples": [
-                  "2020-12-12"
-                ],
-                "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
-              }
-            }
-          },
-          "projectAddress": {
-            "$id": "#/properties/application/properties/projectAddress",
-            "type": "object",
-            "title": "The Projectaddress Schema",
-            "required": [
-              "projectPostcode",
-              "line1",
-              "townCity",
-              "county"
-            ],
-            "properties": {
-              "projectPostcode": {
-                "$id": "#/properties/application/properties/projectAddress/properties/projectPostcode",
-                "type": "string",
-                "title": "The Projectpostcode Schema",
-                "default": "",
-                "examples": [
-                  "B15 1TR"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "line1": {
-                "$id": "#/properties/application/properties/projectAddress/properties/line1",
-                "type": "string",
-                "title": "The Line1 Schema",
-                "default": "",
-                "examples": [
-                  "82553 Demarco Rapid"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "line2": {
-                "$id": "#/properties/application/properties/projectAddress/properties/line1",
-                "type": ["string", "null"],
-                "title": "The Line2 Schema",
-                "default": "",
-                "examples": [
-                  "Foo Street"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "line3": {
-                "$id": "#/properties/application/properties/projectAddress/properties/line1",
-                "type": ["string", "null"],
-                "title": "The Line3 Schema",
-                "default": "",
-                "examples": [
-                  "Foo lane"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "townCity": {
-                "$id": "#/properties/application/properties/projectAddress/properties/townCity",
-                "type": "string",
-                "title": "The Towncity Schema",
-                "default": "",
-                "examples": [
-                  "Waelchitown"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "county": {
-                "$id": "#/properties/application/properties/projectAddress/properties/county",
-                "type": "string",
-                "title": "The County Schema",
-                "default": "",
-                "examples": [
-                  "Berkshire"
-                ],
-                "pattern": "^(.*)$"
-              }
-            }
-          },
-          "yourIdeaProject": {
-            "$id": "#/properties/application/properties/yourIdeaProject",
-            "type": "string",
-            "title": "The Yourideaproject Schema",
-            "default": "",
-            "examples": [
-              "Free text…"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectDifference": {
-            "$id": "#/properties/application/properties/projecDifference",
-            "type": "string",
-            "title": "The Projectdifference Schema",
-            "default": "",
-            "examples": [
-              "More free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectCommunity": {
-            "$id": "#/properties/application/properties/projectCommunity",
-            "type": "string",
-            "title": "The Projectcommunity Schema",
-            "default": "",
-            "examples": [
-              "Even more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOrgBestPlace": {
-            "$id": "#/properties/application/properties/projectOrgBestPlace",
-            "type": "string",
-            "title": "The Projectorgbestplace Schema",
-            "default": "",
-            "examples": [
-              "Even more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectAvailable": {
-            "$id": "#/properties/application/properties/projectAvailable",
-            "type": "string",
-            "title": "The Projectavailable Schema",
-            "default": "",
-            "examples": [
-              "Even more more more text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome1": {
-            "$id": "#/properties/application/properties/projectOutcome1",
-            "type": "string",
-            "title": "The Projectoutcome1 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome2": {
-            "$id": "#/properties/application/properties/projectOutcome2",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome2 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome3": {
-            "$id": "#/properties/application/properties/projectOutcome3",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome3 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome4": {
-            "$id": "#/properties/application/properties/projectOutcome4",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome4 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome5": {
-            "$id": "#/properties/application/properties/projectOutcome5",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome5 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome6": {
-            "$id": "#/properties/application/properties/projectOutcome6",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome6 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome7": {
-            "$id": "#/properties/application/properties/projectOutcome7",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome7 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome8": {
-            "$id": "#/properties/application/properties/projectOutcome8",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome8 Schema",
-            "default": "",
-            "examples": [
-              "More and more and more free text"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "projectOutcome9": {
-            "$id": "#/properties/application/properties/projectOutcome9",
-            "type": ["string", "null"],
-            "title": "The Projectoutcome9 Schema",
-            "default": null,
-            "examples": [
-              null
-            ]
-          },
-          "projectCosts": {
-            "$id": "#/properties/application/properties/projectCosts",
-            "type": "array",
-            "title": "The Projectcosts Schema",
-            "items": {
-              "$id": "#/properties/application/properties/projectCosts/items",
-              "type": "object",
-              "title": "The Items Schema",
-              "required": [
-                "costType",
-                "costDescription",
-                "costAmount"
+      }
+    },
+    "application": {
+      "$id": "#/properties/application",
+      "type": "object",
+      "title": "The Application Schema",
+      "required": [
+        "projectName",
+        "projectDateRange",
+        "projectAddress",
+        "yourIdeaProject",
+        "projectDifference",
+        "projectCommunity",
+        "projectOrgBestPlace",
+        "projectAvailable",
+        "projectOutcome1",
+        "projectTotalCosts",
+        "organisationId",
+        "organisationName",
+        "organisationAddress",
+        "organisationType",
+        "mainContactName",
+        "mainContactDateOfBirth",
+        "mainContactAddress",
+        "mainContactEmail",
+        "mainContactPhone",
+        "authorisedSignatoryOneDetails",
+        "authorisedSignatoryTwoDetails"
+      ],
+      "properties": {
+        "projectName": {
+          "$id": "#/properties/application/properties/projectName",
+          "type": "string",
+          "title": "The Projectname Schema",
+          "default": "",
+          "examples": [
+            "my project"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectDateRange": {
+          "$id": "#/properties/application/properties/projectDateRange",
+          "type": "object",
+          "title": "The Projectdaterange Schema",
+          "required": [
+            "startDate",
+            "endDate"
+          ],
+          "properties": {
+            "startDate": {
+              "$id": "#/properties/application/properties/projectDateRange/properties/startDate",
+              "type": "string",
+              "title": "Project Start Date",
+              "default": "",
+              "examples": [
+                "2020-12-12"
               ],
-              "properties": {
-                "costType": {
-                  "$id": "#/properties/application/properties/projectCosts/items/properties/costType",
-                  "type": "string",
-                  "title": "The Costtype Schema",
-                  "default": "",
-                  "examples": [
-                    "new-staff"
-                  ],
-                  "enum": ["new-staff", "professional-fees", "recruitment", "purchase-price-of-heritage-items", "repair-and-conservation-work", "event-costs", "digital-outputs", "equipment-and-materials-including-learning-materials", "training-for-staff", "training-for-volunteers", "travel-for-staff", "travel-for-volunteers", "expenses-for-staff", "expenses-for-volunteers", "other", "publicity-and-promotion", "evaluation", "contingency"],
-                  "pattern": "^(.*)$"
-                },
-                "costDescription": {
-                  "$id": "#/properties/application/properties/projectCosts/items/properties/costDescription",
-                  "type": "string",
-                  "title": "The Costdescription Schema",
-                  "default": "",
-                  "examples": [
-                    "Free text"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "costAmount": {
-                  "$id": "#/properties/application/properties/projectCosts/items/properties/costAmount",
-                  "type": "integer",
-                  "title": "The Costamount Schema",
-                  "default": 0,
-                  "examples": [
-                    1000
-                  ]
-                }
-              }
-            }
-          },
-          "projectVolunteers": {
-            "$id": "#/properties/application/properties/projectVolunteers",
-            "type": "array",
-            "title": "The Projectvolunteers Schema",
-            "items": {
-              "$id": "#/properties/application/properties/projectVolunteers/items",
-              "type": "object",
-              "title": "The Items Schema",
-              "required": [
-                "description",
-                "hours"
+              "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
+            },
+            "endDate": {
+              "$id": "#/properties/application/properties/projectDateRange/properties/endDate",
+              "type": "string",
+              "title": "Project end date",
+              "default": "",
+              "examples": [
+                "2020-12-12"
               ],
-              "properties": {
-                "description": {
-                  "$id": "#/properties/application/properties/projectVolunteers/items/properties/description",
-                  "type": "string",
-                  "title": "The Description Schema",
-                  "default": "",
-                  "examples": [
-                    "free text"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "hours": {
-                  "$id": "#/properties/application/properties/projectVolunteers/items/properties/hours",
-                  "type": "integer",
-                  "title": "The Hours Schema",
-                  "default": 0,
-                  "examples": [
-                    10
-                  ]
-                }
-              }
+              "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
             }
-          },
-          "nonCashContributions": {
-            "$id": "#/properties/application/properties/nonCashContributions",
-            "type": "array",
-            "title": "The Noncashcontributions Schema",
-            "items": {
-              "$id": "#/properties/application/properties/nonCashContributions/items",
-              "type": "object",
-              "title": "The Items Schema",
-              "required": [
-                "description",
-                "estimatedValue",
-                "secured"
-              ],
-              "properties": {
-                "description": {
-                  "$id": "#/properties/application/properties/nonCashContributions/items/properties/description",
-                  "type": "string",
-                  "title": "The Description Schema",
-                  "default": "",
-                  "examples": [
-                    "Free text"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "estimatedValue": {
-                  "$id": "#/properties/application/properties/nonCashContributions/items/properties/estimatedValue",
-                  "type": "integer",
-                  "title": "The Estimatedvalue Schema",
-                  "default": 0,
-                  "examples": [
-                    1000
-                  ]
-                },
-                "secured": {
-                  "$id": "#/properties/application/properties/nonCashContributions/items/properties/secured",
-                  "type": "string",
-                  "title": "The Secured Schema",
-                  "default": "",
-                  "enum": ["yes-with-evidence", "yes-no-evidence-yet", "no", "not-sure"],
-                  "examples": [
-                    "yes-with-evidence"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            }
-          },
-          "cashContributions": {
-            "$id": "#/properties/application/properties/cashContributions",
-            "type": "array",
-            "title": "The Cashcontributions Schema",
-            "items": {
-              "$id": "#/properties/application/properties/cashContributions/items",
-              "type": "object",
-              "title": "The Items Schema",
-              "required": [
-                "description",
-                "secured",
-                "amount"
-              ],
-              "properties": {
-                "description": {
-                  "$id": "#/properties/application/properties/cashContributions/items/properties/description",
-                  "type": "string",
-                  "title": "The Description Schema",
-                  "default": "",
-                  "examples": [
-                    "free text"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "secured": {
-                  "$id": "#/properties/application/properties/cashContributions/items/properties/secured",
-                  "type": "string",
-                  "title": "The Secured Schema",
-                  "default": "",
-                  "enum": ["yes-with-evidence", "yes-no-evidence-yet", "no", "not-sure"],
-                  "examples": [
-                    "yes-with-evidence"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "amount": {
-                  "$id": "#/properties/application/properties/cashContributions/items/properties/amount",
-                  "type": "integer",
-                  "title": "The Amount Schema",
-                  "default": 0,
-                  "examples": [
-                    1000
-                  ]
-                }
-              }
-            }
-          },
-          "evidenceOfSupport": {
-            "$id": "#/properties/application/properties/evidenceOfSupport",
-            "type": "array",
-            "title": "The Evidenceofsupport Schema",
-            "items": {
-              "$id": "#/properties/application/properties/evidenceOfSupport/items",
-              "type": "object",
-              "title": "The Items Schema",
-              "required": [
-                "description"
-              ],
-              "properties": {
-                "description": {
-                  "$id": "#/properties/application/properties/evidenceOfSupport/items/properties/description",
-                  "type": "string",
-                  "title": "The Description Schema",
-                  "default": "",
-                  "examples": [
-                    "free text"
-                  ],
-                  "pattern": "^(.*)$"
-                }
-              }
-            }
-          },
-          "organisationId": {
-            "$id": "#/properties/application/properties/organisationId",
-            "type": "string",
-            "title": "Organisation ID (UUID)",
-            "default": "",
-            "examples": [
-              "c23e12e0-e69e-11e9-aaf2-2514879727cc"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "organisationMission": {
-            "$id": "#/properties/application/properties/organisationMission",
-            "type": "array",
-            "items": {"type": "string"},
-            "title": "Organisation Mission",
-            "default": "",
-            "enum": ["black-or-minority-ethnic-led", "disability-led", "lgbt+-led", "female-led", "young-people-led"],
-            "pattern": "^(.*)$"
-          },
-          "organisationAddress": {
-            "$id": "#/properties/application/properties/organisationAddress",
-            "type": "object",
-            "title": "The Organisationaddress Schema",
-            "required": [
-              "line1",
-              "townCity",
-              "county",
-              "postcode"
-            ],
-            "properties": {
-              "line1": {
-                "$id": "#/properties/application/properties/organisationAddress/properties/line1",
-                "type": "string",
-                "title": "The Line1 Schema",
-                "default": "",
-                "examples": [
-                  "82553 Demarco Rapid"
-                ],
-                "pattern": "^(.*)$"
-              },              
-              "line2": {
-                "$id": "#/properties/application/properties/projectAddress/properties/line1",
-                "type": ["string", "null"],
-                "title": "The Line2 Schema",
-                "default": "",
-                "examples": [
-                  "Foo Street"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "line3": {
-                "$id": "#/properties/application/properties/projectAddress/properties/line1",
-                "type": ["string", "null"],
-                "title": "The Line3 Schema",
-                "default": "",
-                "examples": [
-                  "Foo lane"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "townCity": {
-                "$id": "#/properties/application/properties/organisationAddress/properties/townCity",
-                "type": "string",
-                "title": "The Towncity Schema",
-                "default": "",
-                "examples": [
-                  "Waelchitown"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "county": {
-                "$id": "#/properties/application/properties/organisationAddress/properties/county",
-                "type": "string",
-                "title": "The County Schema",
-                "default": "",
-                "examples": [
-                  "Berkshire"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "postcode": {
-                "$id": "#/properties/application/properties/organisationAddress/properties/postcode",
-                "type": "string",
-                "title": "The Postcode Schema",
-                "default": "",
-                "examples": [
-                  "B15 1TR"
-                ],
-                "pattern": "^(.*)$"
-              }
-            }
-          },
-          "organisationType": {
-            "$id": "#/properties/application/properties/organisationType",
-            "type": "string",
-            "enum": ["local-authority", "other-public-sector-organisation", "registered-charity", "registered-company-or-community-interest-company", "faith-based-or-church-organisation", "community-or-voluntary-group", "private-owner-of-heritage"],
-
-            "title": "organisation type",
-            "default": "",
-            "examples": [
-              "local-authority"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "companyNumber": {
-            "$id": "#/properties/application/properties/companyNumber",
-            "type": "string",
-            "title": "The Companynumber Schema",
-            "default": "",
-            "examples": [
-              "123456789"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "charityNumber": {
-            "$id": "#/properties/application/properties/charityNumber",
-            "type": ["null", "string"],
-            "title": "Charity Number",
-            "default": null,
-            "examples": [
-                null, "123456789"
-            ]
-          },
-          "charityNumberNi": {
-            "$id": "#/properties/application/properties/charityNumberNi",
-            "type": ["null", "string"],
-            "title": "Northern Island Charity Number",
-            "default": null,
-            "examples": [
-              null, "123456789"
-            ]
-          },
-          "mainContactName": {
-            "$id": "#/properties/application/properties/mainContactName",
-            "type": "string",
-            "title": "Main contact name",
-            "default": "",
-            "examples": [
-              "Nelda"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "mainContactDateOfBirth": {
-            "$id": "#/properties/application/properties/mainContactDateOfBirth",
-            "type": "string",
-            "title": "The Main contact date of birth Schema",
-            "default": "",
-            "examples": [
-              "1975-10-12"
-            ],
-            "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
-          },
-          "mainContactAddress": {
-            "$id": "#/properties/application/properties/mainContactAddress",
-            "type": "object",
-            "title": "Main Contact Address",
-            "required": [
-              "line1",
-              "townCity",
-              "county",
-              "postcode"
-            ],
-            "properties": {
-              "line1": {
-                "$id": "#/properties/application/properties/mainContactAddress/properties/line1",
-                "type": "string",
-                "title": "Address Line 1",
-                "default": "",
-                "examples": [
-                  "41465 Bashirian Oval"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "line2": {
-                "$id": "#/properties/application/properties/projectAddress/properties/line1",
-                "type": ["string", "null"],
-                "title": "The Line2 Schema",
-                "default": "",
-                "examples": [
-                  "Foo Street"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "line3": {
-                "$id": "#/properties/application/properties/projectAddress/properties/line1",
-                "type": ["string", "null"],
-                "title": "The Line3 Schema",
-                "default": "",
-                "examples": [
-                  "Foo lane"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "townCity": {
-                "$id": "#/properties/application/properties/mainContactAddress/properties/townCity",
-                "type": "string",
-                "title": "Address town or city",
-                "default": "",
-                "examples": [
-                  "Friesenhaven"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "county": {
-                "$id": "#/properties/application/properties/mainContactAddress/properties/county",
-                "type": "string",
-                "title": "Address County",
-                "default": "",
-                "examples": [
-                  "Berkshire"
-                ],
-                "pattern": "^(.*)$"
-              },
-              "postcode": {
-                "$id": "#/properties/application/properties/mainContactAddress/properties/postcode",
-                "type": "string",
-                "title": "Postcode",
-                "default": "",
-                "examples": [
-                  "B15 1TR"
-                ],
-                "pattern": "^(.*)$"
-              }
-            }
-          },
-          "mainContactEmail": {
-            "$id": "#/properties/application/properties/mainContactEmail",
-            "type": "string",
-            "title": "The Maincontactemail Schema",
-            "default": "",
-            "examples": [
-              "Lizzie87@example.com"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "mainContactPhone": {
-            "$id": "#/properties/application/properties/mainContactPhone",
-            "type": "string",
-            "title": "The Maincontactphone Schema",
-            "default": "",
-            "examples": [
-              "0345 4 10 20 30"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "authorisedSignatoryRole": {
-            "$id": "#/properties/application/properties/authorisedSignatoryRole",
-            "type": "string",
-            "title": "The Authorisedsignatoryrole Schema",
-            "default": "",
-            "examples": [
-              "trustee"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "authorisedSignatoryName": {
-            "$id": "#/properties/application/properties/authorisedSignatoryName",
-            "type": "string",
-            "title": "Authorised Signatory Name",
-            "default": "",
-            "examples": [
-              "Jane Doe"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "authorisedSignatoryPhone": {
-            "$id": "#/properties/application/properties/authorisedSignatoryPhone",
-            "type": "string",
-            "title": "Authorised Signatory Phone",
-            "default": "",
-            "examples": [
-              "07777 777777"
-            ],
-            "pattern": "^(.*)$"
-          },
-          "authorisedSignatoryEmail": {
-            "$id": "#/properties/application/properties/authorisedSignatoryEmail",
-            "type": "string",
-            "title": "Authorised Signatory Email",
-            "default": "",
-            "examples": [
-              "jane@example.com"
-            ],
-            "pattern": "^(.*)$"
           }
+        },
+        "projectAddress": {
+          "$id": "#/properties/application/properties/projectAddress",
+          "type": "object",
+          "title": "The Projectaddress Schema",
+          "required": [
+            "projectPostcode",
+            "line1",
+            "townCity",
+            "county"
+          ],
+          "properties": {
+            "projectPostcode": {
+              "$id": "#/properties/application/properties/projectAddress/properties/projectPostcode",
+              "type": "string",
+              "title": "The Projectpostcode Schema",
+              "default": "",
+              "examples": [
+                "B15 1TR"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "line1": {
+              "$id": "#/properties/application/properties/projectAddress/properties/line1",
+              "type": "string",
+              "title": "The Line1 Schema",
+              "default": "",
+              "examples": [
+                "82553 Demarco Rapid"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "line2": {
+              "$id": "#/properties/application/properties/projectAddress/properties/line1",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Line2 Schema",
+              "default": "",
+              "examples": [
+                "Foo Street"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "line3": {
+              "$id": "#/properties/application/properties/projectAddress/properties/line1",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Line3 Schema",
+              "default": "",
+              "examples": [
+                "Foo lane"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "townCity": {
+              "$id": "#/properties/application/properties/projectAddress/properties/townCity",
+              "type": "string",
+              "title": "The Towncity Schema",
+              "default": "",
+              "examples": [
+                "Waelchitown"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "county": {
+              "$id": "#/properties/application/properties/projectAddress/properties/county",
+              "type": "string",
+              "title": "The County Schema",
+              "default": "",
+              "examples": [
+                "Berkshire"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "yourIdeaProject": {
+          "$id": "#/properties/application/properties/yourIdeaProject",
+          "type": "string",
+          "title": "The Yourideaproject Schema",
+          "default": "",
+          "examples": [
+            "Free text…"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectDifference": {
+          "$id": "#/properties/application/properties/projecDifference",
+          "type": "string",
+          "title": "The Projectdifference Schema",
+          "default": "",
+          "examples": [
+            "More free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectCommunity": {
+          "$id": "#/properties/application/properties/projectCommunity",
+          "type": "string",
+          "title": "The Projectcommunity Schema",
+          "default": "",
+          "examples": [
+            "Even more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOrgBestPlace": {
+          "$id": "#/properties/application/properties/projectOrgBestPlace",
+          "type": "string",
+          "title": "The Projectorgbestplace Schema",
+          "default": "",
+          "examples": [
+            "Even more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectAvailable": {
+          "$id": "#/properties/application/properties/projectAvailable",
+          "type": "string",
+          "title": "The Projectavailable Schema",
+          "default": "",
+          "examples": [
+            "Even more more more text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome1": {
+          "$id": "#/properties/application/properties/projectOutcome1",
+          "type": "string",
+          "title": "The Projectoutcome1 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome2": {
+          "$id": "#/properties/application/properties/projectOutcome2",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome2 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome3": {
+          "$id": "#/properties/application/properties/projectOutcome3",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome3 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome4": {
+          "$id": "#/properties/application/properties/projectOutcome4",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome4 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome5": {
+          "$id": "#/properties/application/properties/projectOutcome5",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome5 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome6": {
+          "$id": "#/properties/application/properties/projectOutcome6",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome6 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome7": {
+          "$id": "#/properties/application/properties/projectOutcome7",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome7 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome8": {
+          "$id": "#/properties/application/properties/projectOutcome8",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome8 Schema",
+          "default": "",
+          "examples": [
+            "More and more and more free text"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "projectOutcome9": {
+          "$id": "#/properties/application/properties/projectOutcome9",
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "The Projectoutcome9 Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "projectCosts": {
+          "$id": "#/properties/application/properties/projectCosts",
+          "type": "array",
+          "title": "The Projectcosts Schema",
+          "items": {
+            "$id": "#/properties/application/properties/projectCosts/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "costType",
+              "costDescription",
+              "costAmount"
+            ],
+            "properties": {
+              "costType": {
+                "$id": "#/properties/application/properties/projectCosts/items/properties/costType",
+                "type": "string",
+                "title": "The Costtype Schema",
+                "default": "",
+                "examples": [
+                  "new-staff"
+                ],
+                "enum": [
+                  "new-staff",
+                  "professional-fees",
+                  "recruitment",
+                  "purchase-price-of-heritage-items",
+                  "repair-and-conservation-work",
+                  "event-costs",
+                  "digital-outputs",
+                  "equipment-and-materials-including-learning-materials",
+                  "training-for-staff",
+                  "training-for-volunteers",
+                  "travel-for-staff",
+                  "travel-for-volunteers",
+                  "expenses-for-staff",
+                  "expenses-for-volunteers",
+                  "other",
+                  "publicity-and-promotion",
+                  "evaluation",
+                  "contingency"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "costDescription": {
+                "$id": "#/properties/application/properties/projectCosts/items/properties/costDescription",
+                "type": "string",
+                "title": "The Costdescription Schema",
+                "default": "",
+                "examples": [
+                  "Free text"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "costAmount": {
+                "$id": "#/properties/application/properties/projectCosts/items/properties/costAmount",
+                "type": "integer",
+                "title": "The Costamount Schema",
+                "default": 0,
+                "examples": [
+                  1000
+                ]
+              }
+            }
+          }
+        },
+        "projectVolunteers": {
+          "$id": "#/properties/application/properties/projectVolunteers",
+          "type": "array",
+          "title": "The Projectvolunteers Schema",
+          "items": {
+            "$id": "#/properties/application/properties/projectVolunteers/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "description",
+              "hours"
+            ],
+            "properties": {
+              "description": {
+                "$id": "#/properties/application/properties/projectVolunteers/items/properties/description",
+                "type": "string",
+                "title": "The Description Schema",
+                "default": "",
+                "examples": [
+                  "free text"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "hours": {
+                "$id": "#/properties/application/properties/projectVolunteers/items/properties/hours",
+                "type": "integer",
+                "title": "The Hours Schema",
+                "default": 0,
+                "examples": [
+                  10
+                ]
+              }
+            }
+          }
+        },
+        "nonCashContributions": {
+          "$id": "#/properties/application/properties/nonCashContributions",
+          "type": "array",
+          "title": "The Noncashcontributions Schema",
+          "items": {
+            "$id": "#/properties/application/properties/nonCashContributions/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "description",
+              "estimatedValue",
+              "secured"
+            ],
+            "properties": {
+              "description": {
+                "$id": "#/properties/application/properties/nonCashContributions/items/properties/description",
+                "type": "string",
+                "title": "The Description Schema",
+                "default": "",
+                "examples": [
+                  "Free text"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "estimatedValue": {
+                "$id": "#/properties/application/properties/nonCashContributions/items/properties/estimatedValue",
+                "type": "integer",
+                "title": "The Estimatedvalue Schema",
+                "default": 0,
+                "examples": [
+                  1000
+                ]
+              },
+              "secured": {
+                "$id": "#/properties/application/properties/nonCashContributions/items/properties/secured",
+                "type": "string",
+                "title": "The Secured Schema",
+                "default": "",
+                "enum": [
+                  "yes-with-evidence",
+                  "yes-no-evidence-yet",
+                  "no",
+                  "not-sure"
+                ],
+                "examples": [
+                  "yes-with-evidence"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "cashContributions": {
+          "$id": "#/properties/application/properties/cashContributions",
+          "type": "array",
+          "title": "The Cashcontributions Schema",
+          "items": {
+            "$id": "#/properties/application/properties/cashContributions/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "description",
+              "secured",
+              "amount"
+            ],
+            "properties": {
+              "description": {
+                "$id": "#/properties/application/properties/cashContributions/items/properties/description",
+                "type": "string",
+                "title": "The Description Schema",
+                "default": "",
+                "examples": [
+                  "free text"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "secured": {
+                "$id": "#/properties/application/properties/cashContributions/items/properties/secured",
+                "type": "string",
+                "title": "The Secured Schema",
+                "default": "",
+                "enum": [
+                  "yes-with-evidence",
+                  "yes-no-evidence-yet",
+                  "no",
+                  "not-sure"
+                ],
+                "examples": [
+                  "yes-with-evidence"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "amount": {
+                "$id": "#/properties/application/properties/cashContributions/items/properties/amount",
+                "type": "integer",
+                "title": "The Amount Schema",
+                "default": 0,
+                "examples": [
+                  1000
+                ]
+              }
+            }
+          }
+        },
+        "evidenceOfSupport": {
+          "$id": "#/properties/application/properties/evidenceOfSupport",
+          "type": "array",
+          "title": "The Evidenceofsupport Schema",
+          "items": {
+            "$id": "#/properties/application/properties/evidenceOfSupport/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "description"
+            ],
+            "properties": {
+              "description": {
+                "$id": "#/properties/application/properties/evidenceOfSupport/items/properties/description",
+                "type": "string",
+                "title": "The Description Schema",
+                "default": "",
+                "examples": [
+                  "free text"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "organisationId": {
+          "$id": "#/properties/application/properties/organisationId",
+          "type": "string",
+          "title": "Organisation ID (UUID)",
+          "default": "",
+          "examples": [
+            "c23e12e0-e69e-11e9-aaf2-2514879727cc"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "organisationName": {
+          "$id": "#/properties/application/properties/organisationId",
+          "type": "string",
+          "title": "Organisation name",
+          "default": "",
+          "examples": [
+            "Acme corp"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "organisationAddress": {
+          "$id": "#/properties/application/properties/organisationAddress",
+          "type": "object",
+          "title": "The Organisationaddress Schema",
+          "required": [
+            "line1",
+            "townCity",
+            "county",
+            "postcode"
+          ],
+          "properties": {
+            "line1": {
+              "$id": "#/properties/application/properties/organisationAddress/properties/line1",
+              "type": "string",
+              "title": "The Line1 Schema",
+              "default": "",
+              "examples": [
+                "82553 Demarco Rapid"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "line2": {
+              "$id": "#/properties/application/properties/projectAddress/properties/line1",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Line2 Schema",
+              "default": "",
+              "examples": [
+                "Foo Street"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "line3": {
+              "$id": "#/properties/application/properties/projectAddress/properties/line1",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Line3 Schema",
+              "default": "",
+              "examples": [
+                "Foo lane"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "townCity": {
+              "$id": "#/properties/application/properties/organisationAddress/properties/townCity",
+              "type": "string",
+              "title": "The Towncity Schema",
+              "default": "",
+              "examples": [
+                "Waelchitown"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "county": {
+              "$id": "#/properties/application/properties/organisationAddress/properties/county",
+              "type": "string",
+              "title": "The County Schema",
+              "default": "",
+              "examples": [
+                "Berkshire"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "postcode": {
+              "$id": "#/properties/application/properties/organisationAddress/properties/postcode",
+              "type": "string",
+              "title": "The Postcode Schema",
+              "default": "",
+              "examples": [
+                "B15 1TR"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "organisationType": {
+          "$id": "#/properties/application/properties/organisationType",
+          "type": "string",
+          "enum": [
+            "local-authority",
+            "other-public-sector-organisation",
+            "registered-charity",
+            "registered-company-or-community-interest-company",
+            "faith-based-or-church-organisation",
+            "community-or-voluntary-group",
+            "private-owner-of-heritage"
+          ],
+          "title": "organisation type",
+          "default": "",
+          "examples": [
+            "local-authority"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "companyNumber": {
+          "$id": "#/properties/application/properties/companyNumber",
+          "type": "string",
+          "title": "The Companynumber Schema",
+          "default": "",
+          "examples": [
+            "123456789"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "charityNumber": {
+          "$id": "#/properties/application/properties/charityNumber",
+          "type": [
+            "null",
+            "string"
+          ],
+          "title": "Charity Number",
+          "default": null,
+          "examples": [
+            null,
+            "123456789"
+          ]
+        },
+        "charityNumberNi": {
+          "$id": "#/properties/application/properties/charityNumberNi",
+          "type": [
+            "null",
+            "string"
+          ],
+          "title": "Northern Island Charity Number",
+          "default": null,
+          "examples": [
+            null,
+            "123456789"
+          ]
+        },
+        "mainContactName": {
+          "$id": "#/properties/application/properties/mainContactName",
+          "type": "string",
+          "title": "Main contact name",
+          "default": "",
+          "examples": [
+            "Nelda"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "mainContactDateOfBirth": {
+          "$id": "#/properties/application/properties/mainContactDateOfBirth",
+          "type": "string",
+          "title": "The Main contact date of birth Schema",
+          "default": "",
+          "examples": [
+            "1975-10-12"
+          ],
+          "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d$"
+        },
+        "mainContactAddress": {
+          "$id": "#/properties/application/properties/mainContactAddress",
+          "type": "object",
+          "title": "Main Contact Address",
+          "required": [
+            "line1",
+            "townCity",
+            "county",
+            "postcode"
+          ],
+          "properties": {
+            "line1": {
+              "$id": "#/properties/application/properties/mainContactAddress/properties/line1",
+              "type": "string",
+              "title": "Address Line 1",
+              "default": "",
+              "examples": [
+                "41465 Bashirian Oval"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "line2": {
+              "$id": "#/properties/application/properties/projectAddress/properties/line1",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Line2 Schema",
+              "default": "",
+              "examples": [
+                "Foo Street"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "line3": {
+              "$id": "#/properties/application/properties/projectAddress/properties/line1",
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The Line3 Schema",
+              "default": "",
+              "examples": [
+                "Foo lane"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "townCity": {
+              "$id": "#/properties/application/properties/mainContactAddress/properties/townCity",
+              "type": "string",
+              "title": "Address town or city",
+              "default": "",
+              "examples": [
+                "Friesenhaven"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "county": {
+              "$id": "#/properties/application/properties/mainContactAddress/properties/county",
+              "type": "string",
+              "title": "Address County",
+              "default": "",
+              "examples": [
+                "Berkshire"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "postcode": {
+              "$id": "#/properties/application/properties/mainContactAddress/properties/postcode",
+              "type": "string",
+              "title": "Postcode",
+              "default": "",
+              "examples": [
+                "B15 1TR"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "mainContactEmail": {
+          "$id": "#/properties/application/properties/mainContactEmail",
+          "type": "string",
+          "title": "The Maincontactemail Schema",
+          "default": "",
+          "examples": [
+            "Lizzie87@example.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "mainContactPhone": {
+          "$id": "#/properties/application/properties/mainContactPhone",
+          "type": "string",
+          "title": "The Maincontactphone Schema",
+          "default": "",
+          "examples": [
+            "0345 4 10 20 30"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "authorisedSignatoryOneDetails": {
+          "type": "object",
+          "properties": {
+            "role": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "role",
+            "name",
+            "phone",
+            "email"
+          ]
+        },
+        "authorisedSignatoryTwoDetails": {
+          "type": "object",
+          "properties": {
+            "role": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "role",
+            "name",
+            "phone",
+            "email"
+          ]
         }
       }
     }
   }
+}

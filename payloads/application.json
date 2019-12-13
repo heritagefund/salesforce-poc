@@ -121,11 +121,19 @@
             "county": "Berkshire",
             "postcode": "B15 1TR"
         },
+        "authorisedSignatoryOneDetails": {
+            "role": "trustee",
+            "name": "Jane Doe",
+            "phone": "07777 777777",
+            "email": "jane@example.com"
+        },
+        "authorisedSignatoryTwoDetails": {
+            "role": "trustee",
+            "name": "Jane Doe",
+            "phone": "07777 777777",
+            "email": "jane@example.com"
+        },
         "mainContactEmail": "Lizzie87@example.com",
         "mainContactPhone": "0345 4 10 20 30",
-        "authorisedSignatoryRole": "trustee",
-        "authorisedSignatoryName": "Jane Doe",
-        "authorisedSignatoryPhone": "07777 777777",
-        "authorisedSignatoryEmail": "jane@example.com"
     }
 }
