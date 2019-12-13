@@ -327,12 +327,26 @@
           ],
           "pattern": "^(.*)$"
         },
+        "projectOutcome2Checked": {
+          "$id": "#/properties/application/properties/projectOutcome2Checked",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
         "projectOutcome3": {
           "$id": "#/properties/application/properties/projectOutcome3",
           "type": [
             "string",
             "null"
           ],
+          "projectOutcome3Checked": {
+            "$id": "#/properties/application/properties/projectOutcome3Checked",
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
           "title": "The Projectoutcome3 Schema",
           "default": "",
           "examples": [
@@ -353,6 +367,13 @@
           ],
           "pattern": "^(.*)$"
         },
+        "projectOutcome4Checked": {
+          "$id": "#/properties/application/properties/projectOutcome4Checked",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
         "projectOutcome5": {
           "$id": "#/properties/application/properties/projectOutcome5",
           "type": [
@@ -365,6 +386,13 @@
             "More and more and more free text"
           ],
           "pattern": "^(.*)$"
+        },
+        "projectOutcome5Checked": {
+          "$id": "#/properties/application/properties/projectOutcome5Checked",
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "projectOutcome6": {
           "$id": "#/properties/application/properties/projectOutcome6",
@@ -379,6 +407,13 @@
           ],
           "pattern": "^(.*)$"
         },
+        "projectOutcome6Checked": {
+          "$id": "#/properties/application/properties/projectOutcome6Checked",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
         "projectOutcome7": {
           "$id": "#/properties/application/properties/projectOutcome7",
           "type": [
@@ -391,6 +426,13 @@
             "More and more and more free text"
           ],
           "pattern": "^(.*)$"
+        },
+        "projectOutcome7Checked": {
+          "$id": "#/properties/application/properties/projectOutcome7Checked",
+          "type": [
+            "boolean",
+            "null"
+          ]
         },
         "projectOutcome8": {
           "$id": "#/properties/application/properties/projectOutcome8",
@@ -405,6 +447,13 @@
           ],
           "pattern": "^(.*)$"
         },
+        "projectOutcome8Checked": {
+          "$id": "#/properties/application/properties/projectOutcome8Checked",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
         "projectOutcome9": {
           "$id": "#/properties/application/properties/projectOutcome9",
           "type": [
@@ -415,6 +464,13 @@
           "default": null,
           "examples": [
             null
+          ]
+        },
+        "projectOutcome9Checked": {
+          "$id": "#/properties/application/properties/projectOutcome9Checked",
+          "type": [
+            "boolean",
+            "null"
           ]
         },
         "projectCosts": {
