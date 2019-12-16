@@ -92,7 +92,7 @@
           "examples": [
             "9453d770-e450-11e9-b3b6-212ded63c337"
           ],
-          "pattern": "^(.*)$"
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "startedAt": {
           "$id": "#/properties/meta/properties/startedAt",
@@ -484,7 +484,8 @@
             "required": [
               "costType",
               "costDescription",
-              "costAmount"
+              "costAmount",
+              "costId"
             ],
             "properties": {
               "costType": {
@@ -534,6 +535,16 @@
                 "default": 0,
                 "examples": [
                   1000
+                ]
+              },
+              "costId": {
+                "$id": "#/properties/application/properties/projectCosts/items/properties/costId",
+                "type": "string",
+                "title": "The CostId Schema",
+                "description": "Cost ID in UUID format",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+                "examples": [
+                  "b181327d-0809-46b1-9dc1-8e7e4d965454"
                 ]
               }
             }
@@ -711,7 +722,7 @@
           "examples": [
             "c23e12e0-e69e-11e9-aaf2-2514879727cc"
           ],
-          "pattern": "^(.*)$"
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "organisationName": {
           "$id": "#/properties/application/properties/organisationId",
