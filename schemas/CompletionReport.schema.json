@@ -232,7 +232,6 @@
               "required": [
                 "date",
                 "taskDescription",
-                "taskCategory",
                 "numberOfVolunteers",
                 "volunteerHours"
               ],
@@ -254,17 +253,6 @@
                   "default": "",
                   "examples": [
                     "free text"
-                  ],
-                  "pattern": "^(.*)$"
-                },
-                "taskCategory": {
-                  "$id": "#/properties/application/properties/contributions/items/properties/taskCategory",
-                  "enum": ["volunteer", "skilledLabour", "nonCash", "professionalLabour"],
-                  "type": "string",
-                  "title": "The Taskcategory Schema",
-                  "default": "",
-                  "examples": [
-                    "volunteer"
                   ],
                   "pattern": "^(.*)$"
                 },

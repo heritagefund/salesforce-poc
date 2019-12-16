@@ -164,28 +164,24 @@ export function buildPayload(formType: string, applicationId: string, organisati
                         {
                             "date": "2019-01-01",
                             "taskDescription": "free text",
-                            "taskCategory": "volunteer",
                             "numberOfVolunteers": 10,
                             "volunteerHours": 2000
                         },
                         {
                             "date": "2019-01-01",
                             "taskDescription": "free text",
-                            "taskCategory": "skilledLabour",
                             "numberOfVolunteers": 10,
                             "volunteerHours": 2000
                         },
                         {
                             "date": "2019-01-01",
                             "taskDescription": "free text",
-                            "taskCategory": "professionalLabour",
                             "numberOfVolunteers": 10,
                             "volunteerHours": 2000
                         },
                         {
                             "date": "2019-01-01",
                             "taskDescription": "free text",
-                            "taskCategory": "nonCash",
                             "numberOfVolunteers": 10,
                             "volunteerHours": 2000
                         }
