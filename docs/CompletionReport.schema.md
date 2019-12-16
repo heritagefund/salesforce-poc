@@ -222,7 +222,6 @@ All items must be of the type: `object`, nullable, with following properties:
 | -------------------- | ------- | ------------ | ------- |
 | `date`               | string  | **Required** | `""`    |
 | `numberOfVolunteers` | integer | **Required** | `0`     |
-| `taskCategory`       | string  | **Required** | `""`    |
 | `taskDescription`    | string  | **Required** | `""`    |
 | `volunteerHours`     | integer | **Required** | `0`     |
 
@@ -272,33 +271,6 @@ All instances must conform to this regular expression
 
 ```json
 10
-```
-
-#### taskCategory
-
-##### The Taskcategory Schema
-
-`taskCategory`
-
-- is **required**
-- type: `enum`
-- default: `""`
-
-The value of this property **must** be equal to one of the [known values below](#application-known-values).
-
-##### taskCategory Known Values
-
-| Value                | Description |
-| -------------------- | ----------- |
-| `volunteer`          |             |
-| `skilledLabour`      |             |
-| `nonCash`            |             |
-| `professionalLabour` |             |
-
-##### taskCategory Example
-
-```json
-volunteer
 ```
 
 #### taskDescription
