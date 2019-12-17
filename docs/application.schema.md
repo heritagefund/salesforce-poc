@@ -1024,11 +1024,11 @@ Waelchitown
 All instances must conform to this regular expression
 
 ```regex
-^(.*)$
+^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$
 ```
 
 - test example:
-  [c23e12e0-e69e-11e9-aaf2-2514879727cc](<https://regexr.com/?expression=%5E(.*)%24&text=c23e12e0-e69e-11e9-aaf2-2514879727cc>)
+  [c23e12e0-e69e-11e9-aaf2-2514879727cc](https://regexr.com/?expression=%5E%5B0-9a-f%5D%7B8%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B12%7D%24&text=c23e12e0-e69e-11e9-aaf2-2514879727cc)
 
 ##### organisationId Example
 
@@ -1360,6 +1360,7 @@ All items must be of the type: `object` with following properties:
 | ----------------- | ------- | ------------ | ------- |
 | `costAmount`      | integer | **Required** | `0`     |
 | `costDescription` | string  | **Required** | `""`    |
+| `costId`          | string  | **Required** |         |
 | `costType`        | string  | **Required** | `""`    |
 
 #### costAmount
@@ -1408,6 +1409,36 @@ All instances must conform to this regular expression
 
 ```json
 Free text
+```
+
+#### costId
+
+##### The CostId Schema
+
+Cost ID in UUID format
+
+`costId`
+
+- is **required**
+- type: `string`
+
+##### costId Type
+
+`string`
+
+All instances must conform to this regular expression
+
+```regex
+^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$
+```
+
+- test example:
+  [b181327d-0809-46b1-9dc1-8e7e4d965454](https://regexr.com/?expression=%5E%5B0-9a-f%5D%7B8%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B12%7D%24&text=b181327d-0809-46b1-9dc1-8e7e4d965454)
+
+##### costId Example
+
+```json
+b181327d-0809-46b1-9dc1-8e7e4d965454
 ```
 
 #### costType
@@ -2077,11 +2108,11 @@ Free text…
 All instances must conform to this regular expression
 
 ```regex
-^(.*)$
+^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$
 ```
 
 - test example:
-  [9453d770-e450-11e9-b3b6-212ded63c337](<https://regexr.com/?expression=%5E(.*)%24&text=9453d770-e450-11e9-b3b6-212ded63c337>)
+  [9453d770-e450-11e9-b3b6-212ded63c337](https://regexr.com/?expression=%5E%5B0-9a-f%5D%7B8%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B12%7D%24&text=9453d770-e450-11e9-b3b6-212ded63c337)
 
 ##### applicationId Example
 
