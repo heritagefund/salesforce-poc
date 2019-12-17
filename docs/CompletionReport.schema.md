@@ -400,6 +400,7 @@ All items must be of the type: `object`, nullable, with following properties:
 | `description`      | string  | **Required** | `""`    |
 | `invoiceDate`      | string  | **Required** | `""`    |
 | `invoiceReference` | string  | **Required** | `""`    |
+| `projectCostId`    | string  | **Required** | `""`    |
 | `totalCostClaimed` | integer | **Required** | `0`     |
 | `totalInvoice`     | integer | **Required** | `0`     |
 
@@ -536,6 +537,29 @@ All instances must conform to this regular expression
 
 ```json
 free text
+```
+
+#### projectCostId
+
+##### The projectCostId Schema
+
+the associated project cost ID (UUID)
+
+`projectCostId`
+
+- is **required**
+- type: `string`
+- default: `""`
+
+##### projectCostId Type
+
+`string`
+
+All instances must conform to this regular expression (test examples
+[here](https://regexr.com/?expression=%5E%5B0-9a-f%5D%7B8%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B12%7D%24)):
+
+```regex
+^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$
 ```
 
 #### totalCostClaimed

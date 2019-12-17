@@ -219,6 +219,7 @@ All items must be of the type: `object` with following properties:
 | ------------- | ------- | ------------ | ------- |
 | `amount`      | integer | **Required** | `0`     |
 | `description` | string  | **Required** | `""`    |
+| `id`          | string  | **Required** | `""`    |
 | `secured`     | string  | **Required** | `""`    |
 
 #### amount
@@ -267,6 +268,35 @@ All instances must conform to this regular expression
 
 ```json
 free text
+```
+
+#### id
+
+##### cash contribution ID (UUID)
+
+`id`
+
+- is **required**
+- type: `string`
+- default: `""`
+
+##### id Type
+
+`string`
+
+All instances must conform to this regular expression
+
+```regex
+^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$
+```
+
+- test example:
+  [c23e12e0-e69e-11e9-aaf2-2514879727cc](https://regexr.com/?expression=%5E%5B0-9a-f%5D%7B8%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B4%7D-%5B0-9a-f%5D%7B12%7D%24&text=c23e12e0-e69e-11e9-aaf2-2514879727cc)
+
+##### id Example
+
+```json
+c23e12e0-e69e-11e9-aaf2-2514879727cc
 ```
 
 #### secured
