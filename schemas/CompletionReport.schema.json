@@ -366,7 +366,7 @@
                   "$id": "#/properties/application/properties/howCostsSpent/items/properties/projectCostId",
                   "type": "string",
                   "title": "The projectCostId Schema",
-                  "description": "the associated project cost ID (UUID",
+                  "description": "the associated project cost ID (UUID)",
                   "default": "",
                   "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
                 },
