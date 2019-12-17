@@ -81,22 +81,26 @@
             {
                 "description": "free text",
                 "secured": "yes-with-evidence",
-                "amount": 1000
+                "amount": 1000,
+                "id": "c4237718-ced7-4d03-a95b-1eceaecfdbe0"
             },
             {
                 "description": "free text",
                 "secured": "no",
-                "amount": 1000
+                "amount": 1000,
+                "id": "cf83a007-03e7-4940-a93b-135bb65e363e"
             },
             {
                 "description": "free text",
                 "secured": "not-sure",
-                "amount": 1000
+                "amount": 1000,
+                "id": "5b43682a-0c7d-4ded-ab11-2ad248497425"
             },
             {
                 "description": "free text",
                 "secured": "yes-no-evidence-yet",
-                "amount": 1000
+                "amount": 1000,
+                "id": "ec64bc3b-c580-419a-9eba-bbce6ffc0185"
             }
         ],
         "evidenceOfSupport": [
