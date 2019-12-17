@@ -72,7 +72,7 @@
         "staffLinked": "Yes",
         "howCostsSpent": [
             {
-                
+                "projectCostId": "baa49446-cb70-46c7-ade1-0e17ad450c8a",
                 "costHeading": "free text",
                 "invoiceReference": "free text",
                 "invoiceDate": "2019-01-01",
@@ -81,6 +81,7 @@
                 "totalCostClaimed": 2000
             },
             {
+                "projectCostId": "baa49446-cb70-46c7-ade1-0e17ad450c8a",
                 "costHeading": "free text 2",
                 "invoiceReference": "free text",
                 "invoiceDate": "2019-01-01",
