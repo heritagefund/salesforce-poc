@@ -648,9 +648,20 @@
             "required": [
               "description",
               "secured",
-              "amount"
+              "amount",
+              "id"
             ],
             "properties": {
+              "id": {
+                "$id": "#/properties/application/properties/cashContributions/items/properties/id",
+                "type": "string",
+                "title": "cash contribution ID (UUID)",
+                "default": "",
+                "examples": [
+                  "c23e12e0-e69e-11e9-aaf2-2514879727cc"
+                ],
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+              },
               "description": {
                 "$id": "#/properties/application/properties/cashContributions/items/properties/description",
                 "type": "string",
