@@ -40,7 +40,9 @@
         "projectOutcome7": "More and more and more free text",
         "projectOutcome7Checked": false,
         "projectOutcome8": "More and more and more free text",
+        "projectOutcome8Checked": false,
         "projectOutcome9": null,
+        "projectOutcome9Checked": false,
         "projectCosts": [
             {
                 "costId": "baa49446-cb70-46c7-ade1-0e17ad450c8a",
@@ -146,6 +148,6 @@
             "email": "jane@example.com"
         },
         "mainContactEmail": "Lizzie87@example.com",
-        "mainContactPhone": "0345 4 10 20 30",
+        "mainContactPhone": "0345 4 10 20 30"
     }
 }
