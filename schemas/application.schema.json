@@ -134,6 +134,15 @@
         "authorisedSignatoryTwoDetails"
       ],
       "properties": {
+        "informationNotPublicallyAvailableRequest": {
+          "type":["string", "null"]
+        },
+        "keepInformed": {
+          "type": ["boolean", "null"]
+      },
+      "involveInResearch": {
+        "type": ["boolean", "null"]
+      },
         "projectName": {
           "$id": "#/properties/application/properties/projectName",
           "type": "string",
