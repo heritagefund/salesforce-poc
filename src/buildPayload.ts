@@ -28,8 +28,6 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "projectAddress": {
                         "projectPostcode": "B15 1TR",
                         "line1": "82553 Demarco Rapid",
-                        "line2": "Foo lane",
-                        "line3": "Bar street",
                         "townCity": "Waelchitown",
                         "county": "Berkshire"
                     },
@@ -40,86 +38,127 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "projectAvailable": "Even more more more text",
                     "projectOutcome1": "More and more and more free text",
                     "projectOutcome2": "More and more and more free text",
+                    "projectOutcome2Checked": true,
                     "projectOutcome3": "More and more and more free text",
+                    "projectOutcome3Checked": true,
                     "projectOutcome4": "More and more and more free text",
+                    "projectOutcome4Checked": true,
                     "projectOutcome5": "More and more and more free text",
+                    "projectOutcome5Checked": true,
                     "projectOutcome6": "More and more and more free text",
+                    "projectOutcome6Checked": true,
                     "projectOutcome7": "More and more and more free text",
+                    "projectOutcome7Checked": false,
                     "projectOutcome8": "More and more and more free text",
+                    "projectOutcome8Checked": false,
                     "projectOutcome9": null,
-                    "projectTotalCosts": 20000,
+                    "projectOutcome9Checked": false,
+                    "projectCosts": [
+                        {
+                            "costId": "baa49446-cb70-46c7-ade1-0e17ad450c8a",
+                            "costType": "new-staff",
+                            "costDescription": "Free text",
+                            "costAmount": 1000
+                        },
+                        {
+                            "costId": "af1fbf6c-c4df-4fa5-abcf-fa97f43fe548",
+                            "costType": "professional-fees",
+                            "costDescription": "Free text",
+                            "costAmount": 1000
+                        }
+                    ],
+                    "projectVolunteers": [
+                        {
+                            "description": "free text",
+                            "hours": 10
+                        },
+                        {
+                            "description": "more free text",
+                            "hours": 20
+                        }
+                    ],
+                    "nonCashContributions": [
+                        {
+                            "description": "Free text",
+                            "estimatedValue": 1000,
+                            "secured": "yes-with-evidence"
+                        },
+                        {
+                            "description": "More free text",
+                            "estimatedValue": 2000,
+                            "secured": "not-sure"
+                        }
+                    ],
+                    "cashContributions": [
+                        {
+                            "description": "free text",
+                            "secured": "yes-with-evidence",
+                            "amount": 1000,
+                            "id": uuid()
+                        },
+                        {
+                            "description": "free text",
+                            "secured": "no",
+                            "amount": 1000,
+                            "id": uuid()
+                        },
+                        {
+                            "description": "free text",
+                            "secured": "not-sure",
+                            "amount": 1000,
+                            "id": uuid()
+                        },
+                        {
+                            "description": "free text",
+                            "secured": "yes-no-evidence-yet",
+                            "amount": 1000,
+                            "id": uuid()
+                        }
+                    ],
+                    "evidenceOfSupport": [
+                        {
+                            "description": "free text"
+                        },
+                        {
+                            "description": "more free text"
+                        }
+                    ],
                     "organisationId": uuid(),
                     "organisationName": organisationName,
+                    "organisationMission": ["black-or-minority-ethnic-led", "disability-led", "lgbt+-led", "female-led", "young-people-led"],
                     "organisationAddress": {
                         "line1": "82553 Demarco Rapid",
-                        "line2": "Foo lane",
-                        "line3": "Bar street",
                         "townCity": "Waelchitown",
                         "county": "Berkshire",
                         "postcode": "B15 1TR"
                     },
-                    "organisationType": "other-public-sector-organisation",
+                    "organisationType": "local-authority",
                     "companyNumber": "123456789",
                     "charityNumber": null,
                     "charityNumberNi": null,
-                    "mainContactName": "Jane Foo",
+                    "mainContactName": "Nelda",
                     "mainContactDateOfBirth": "1975-10-12",
                     "mainContactAddress": {
                         "line1": "41465 Bashirian Oval",
-                        "line2": "Foo lane",
-                        "line3": "Bar street",
-                        "townCity": "Friesenhaven",
+                        "line2": "address line 2",
+                        "line3": "address line 3",
                         "county": "Berkshire",
                         "postcode": "B15 1TR"
                     },
-                    "mainContactEmail": "Lizzie90@example.com",
-                    "mainContactPhone": "0345 4 10 20 30",
-                    "authorisedSignatoryRole": "trustee",
-                    "authorisedSignatoryName": "Jane Bar",
-                    "authorisedSignatoryPhone": "07777 777777",
-                    "authorisedSignatoryEmail": "jane@example.com"
-                }
-            }
-        case 'permission-to-start':
-            return {
-                "meta": {
-                    "form": "Permission-to-start",
-                    "schemaVersion": "v1.x",
-                    "environment": "production",
-                    "commitId": "b4ecf18eae01d34b296e9388f387cc42bf7c0f93",
-                    "locale": "en",
-                    "username": "example@example.com",
-                    "applicationId": applicationId,
-                    "startedAt": "2019-05-17T15:34:13.000Z"
-                },
-                "application": {
-                    "proposedChanges": "freeText",
-                    "permissions": [
-                        { "permissionType": "free text", "anticipatedDate": "2019-01-01", "receivedDate": "2019-01-02" },
-                        { "permissionType": "free text 2", "anticipatedDate": "2019-01-01", "receivedDate": null }
-                    ],
-                    "bankAccountName": "free text",
-                    "bankAccountNumber": "12345678",
-                    "buildingSocietyNumber": "12345678",
-                    "bankAccountsortCode": "12345678",
-                    "paymentReference": "free text",
-                    "signatory1": "Jane",
-                    "signatory2": "John",
-                    "signatory3": "David",
-                    "securedPartnershipFunding": "Yes",
-                    "willAdvertise": "notApplicable",
-                    "hasStatutoryPermissions": "Yes",
-                    "agreeTerms": true,
-                    "termsPersonName": "Jane",
-                    "termsPersonOrganisation": "foo charity",
-                    "termsPersonPosition": "free text",
-                    "terms1": true,
-                    "terms2": true,
-                    "terms3": true,
-                    "terms4": true,
-                    "terms5": true,
-                    "terms6": true,
-                    "onBehalfOfPartnership": true
+                    "authorisedSignatoryOneDetails": {
+                        "role": "trustee",
+                        "name": "Jane Doe",
+                        "phone": "07777 777777",
+                        "email": "jane1@example.com"
+                    },
+                    "authorisedSignatoryTwoDetails": {
+                        "role": "trustee",
+                        "name": "Jane Doe",
+                        "phone": "07777 777777",
+                        "email": "jane2@example.com"
+                    },
+                    "mainContactEmail": "Lizzie87@example.com",
+                    "mainContactPhone": "0345 4 10 20 30"
                 }
             }
         case 'completion-report':
