@@ -90,6 +90,7 @@
                 "totalCostClaimed": 2000
             }
         ],
+        "totalCostsClaimed": 3000, 
         "explainSpendingChanges": "free text",
         "fundingAcknowledgement": "free text",
         "completedEvaluation": "Yes"

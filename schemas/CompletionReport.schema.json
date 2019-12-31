@@ -453,6 +453,12 @@
             ],
             "pattern": "^(.*)$"
           },
+          "totalCostsClaimed": {
+            "$id": "#/properties/application/properties/totalCostsClaimed",
+            "type": "integer",
+            "title": "The total costs claimed Schema",
+            "description": "Sum of total costs claimed"
+          },
           "completedEvaluation": {
             "$id": "#/properties/application/properties/completedEvaluation",
             "type": "string",
