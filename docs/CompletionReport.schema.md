@@ -42,6 +42,7 @@ CompletionReport.schema.json
 | `staff`                      | array       | Optional     |         |
 | `staffLinked`                | string      | Optional     | `""`    |
 | `summaryOfAcheivements`      | array       | **Required** |         |
+| `totalCostsClaimed`          | integer     | Optional     |         |
 
 #### changesToApprovedPurposes
 
@@ -859,6 +860,21 @@ All instances must conform to this regular expression
 ```json
 free text
 ```
+
+#### totalCostsClaimed
+
+##### The total costs claimed Schema
+
+Sum of total costs claimed
+
+`totalCostsClaimed`
+
+- is optional
+- type: `integer`
+
+##### totalCostsClaimed Type
+
+`integer`
 
 ## meta
 
