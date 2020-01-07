@@ -30,51 +30,54 @@ application.schema.json
 
 `object` with following properties:
 
-| Property                        | Type         | Required     | Default |
-| ------------------------------- | ------------ | ------------ | ------- |
-| `authorisedSignatoryOneDetails` | object       | **Required** |         |
-| `authorisedSignatoryTwoDetails` | object       | **Required** |         |
-| `cashContributions`             | array        | Optional     |         |
-| `charityNumber`                 | null,string  | Optional     | `null`  |
-| `charityNumberNi`               | null,string  | Optional     | `null`  |
-| `companyNumber`                 | string       | Optional     | `""`    |
-| `evidenceOfSupport`             | array        | Optional     |         |
-| `mainContactAddress`            | object       | **Required** |         |
-| `mainContactDateOfBirth`        | string       | **Required** | `""`    |
-| `mainContactEmail`              | string       | **Required** | `""`    |
-| `mainContactName`               | string       | **Required** | `""`    |
-| `mainContactPhone`              | string       | **Required** | `""`    |
-| `nonCashContributions`          | array        | Optional     |         |
-| `organisationAddress`           | object       | **Required** |         |
-| `organisationId`                | string       | **Required** | `""`    |
-| `organisationName`              | string       | **Required** | `""`    |
-| `organisationType`              | string       | **Required** | `""`    |
-| `projectAddress`                | object       | **Required** |         |
-| `projectAvailable`              | string       | **Required** | `""`    |
-| `projectCommunity`              | string       | **Required** | `""`    |
-| `projectCosts`                  | array        | Optional     |         |
-| `projectDateRange`              | object       | **Required** |         |
-| `projectDifference`             | string       | **Required** | `""`    |
-| `projectName`                   | string       | **Required** | `""`    |
-| `projectOrgBestPlace`           | string       | **Required** | `""`    |
-| `projectOutcome1`               | string       | **Required** | `""`    |
-| `projectOutcome2`               | string,null  | Optional     | `""`    |
-| `projectOutcome2Checked`        | boolean,null | Optional     |         |
-| `projectOutcome3`               | string,null  | Optional     | `""`    |
-| `projectOutcome4`               | string,null  | Optional     | `""`    |
-| `projectOutcome4Checked`        | boolean,null | Optional     |         |
-| `projectOutcome5`               | string,null  | Optional     | `""`    |
-| `projectOutcome5Checked`        | boolean,null | Optional     |         |
-| `projectOutcome6`               | string,null  | Optional     | `""`    |
-| `projectOutcome6Checked`        | boolean,null | Optional     |         |
-| `projectOutcome7`               | string,null  | Optional     | `""`    |
-| `projectOutcome7Checked`        | boolean,null | Optional     |         |
-| `projectOutcome8`               | string,null  | Optional     | `""`    |
-| `projectOutcome8Checked`        | boolean,null | Optional     |         |
-| `projectOutcome9`               | string,null  | Optional     | `null`  |
-| `projectOutcome9Checked`        | boolean,null | Optional     |         |
-| `projectVolunteers`             | array        | Optional     |         |
-| `yourIdeaProject`               | string       | **Required** | `""`    |
+| Property                                   | Type         | Required     | Default |
+| ------------------------------------------ | ------------ | ------------ | ------- |
+| `authorisedSignatoryOneDetails`            | object       | **Required** |         |
+| `authorisedSignatoryTwoDetails`            | object       | **Required** |         |
+| `cashContributions`                        | array        | Optional     |         |
+| `charityNumber`                            | null,string  | Optional     | `null`  |
+| `charityNumberNi`                          | null,string  | Optional     | `null`  |
+| `companyNumber`                            | string       | Optional     | `""`    |
+| `evidenceOfSupport`                        | array        | Optional     |         |
+| `informationNotPublicallyAvailableRequest` | string,null  | Optional     |         |
+| `involveInResearch`                        | boolean,null | Optional     |         |
+| `keepInformed`                             | boolean,null | Optional     |         |
+| `mainContactAddress`                       | object       | **Required** |         |
+| `mainContactDateOfBirth`                   | string       | **Required** | `""`    |
+| `mainContactEmail`                         | string       | **Required** | `""`    |
+| `mainContactName`                          | string       | **Required** | `""`    |
+| `mainContactPhone`                         | string       | **Required** | `""`    |
+| `nonCashContributions`                     | array        | Optional     |         |
+| `organisationAddress`                      | object       | **Required** |         |
+| `organisationId`                           | string       | **Required** | `""`    |
+| `organisationName`                         | string       | **Required** | `""`    |
+| `organisationType`                         | string       | **Required** | `""`    |
+| `projectAddress`                           | object       | **Required** |         |
+| `projectAvailable`                         | string       | **Required** | `""`    |
+| `projectCommunity`                         | string       | **Required** | `""`    |
+| `projectCosts`                             | array        | Optional     |         |
+| `projectDateRange`                         | object       | **Required** |         |
+| `projectDifference`                        | string       | **Required** | `""`    |
+| `projectName`                              | string       | **Required** | `""`    |
+| `projectOrgBestPlace`                      | string       | **Required** | `""`    |
+| `projectOutcome1`                          | string       | **Required** | `""`    |
+| `projectOutcome2`                          | string,null  | Optional     | `""`    |
+| `projectOutcome2Checked`                   | boolean,null | Optional     |         |
+| `projectOutcome3`                          | string,null  | Optional     | `""`    |
+| `projectOutcome4`                          | string,null  | Optional     | `""`    |
+| `projectOutcome4Checked`                   | boolean,null | Optional     |         |
+| `projectOutcome5`                          | string,null  | Optional     | `""`    |
+| `projectOutcome5Checked`                   | boolean,null | Optional     |         |
+| `projectOutcome6`                          | string,null  | Optional     | `""`    |
+| `projectOutcome6Checked`                   | boolean,null | Optional     |         |
+| `projectOutcome7`                          | string,null  | Optional     | `""`    |
+| `projectOutcome7Checked`                   | boolean,null | Optional     |         |
+| `projectOutcome8`                          | string,null  | Optional     | `""`    |
+| `projectOutcome8Checked`                   | boolean,null | Optional     |         |
+| `projectOutcome9`                          | string,null  | Optional     | `null`  |
+| `projectOutcome9Checked`                   | boolean,null | Optional     |         |
+| `projectVolunteers`                        | array        | Optional     |         |
+| `yourIdeaProject`                          | string       | **Required** | `""`    |
 
 #### authorisedSignatoryOneDetails
 
@@ -448,6 +451,39 @@ All instances must conform to this regular expression
 ```json
 free text
 ```
+
+#### informationNotPublicallyAvailableRequest
+
+`informationNotPublicallyAvailableRequest`
+
+- is optional
+- type: `string`
+
+##### informationNotPublicallyAvailableRequest Type
+
+`string`, nullable
+
+#### involveInResearch
+
+`involveInResearch`
+
+- is optional
+- type: `boolean`
+
+##### involveInResearch Type
+
+`boolean` , nullable
+
+#### keepInformed
+
+`keepInformed`
+
+- is optional
+- type: `boolean`
+
+##### keepInformed Type
+
+`boolean` , nullable
 
 #### mainContactAddress
 
