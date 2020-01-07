@@ -148,6 +148,9 @@
             "email": "jane2@example.com"
         },
         "mainContactEmail": "Lizzie87@example.com",
-        "mainContactPhone": "0345 4 10 20 30"
+        "mainContactPhone": "0345 4 10 20 30",
+        "informationNotPublicallyAvailableRequest": "more free text",
+        "keepInformed": false,
+        "involveInResearch": true
     }
 }
