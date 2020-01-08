@@ -115,14 +115,6 @@ export function buildPayload(formType: string, applicationId: string, organisati
                             "id": uuid()
                         }
                     ],
-                    "evidenceOfSupport": [
-                        {
-                            "description": "free text"
-                        },
-                        {
-                            "description": "more free text"
-                        }
-                    ],
                     "organisationId": uuid(),
                     "organisationName": organisationName,
                     "organisationMission": ["black-or-minority-ethnic-led", "disability-led", "lgbt+-led", "female-led", "young-people-led"],
