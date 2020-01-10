@@ -55,13 +55,13 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "projectOutcome9Checked": false,
                     "projectCosts": [
                         {
-                            "costId": "baa49446-cb70-46c7-ade1-0e17ad450c8a",
+                            "costId": uuid(),
                             "costType": "new-staff",
                             "costDescription": "Free text",
                             "costAmount": 1000
                         },
                         {
-                            "costId": "af1fbf6c-c4df-4fa5-abcf-fa97f43fe548",
+                            "costId": uuid(),
                             "costType": "professional-fees",
                             "costDescription": "Free text",
                             "costAmount": 1000
