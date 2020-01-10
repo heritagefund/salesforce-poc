@@ -38,7 +38,6 @@ application.schema.json
 | `charityNumber`                            | null,string  | Optional     | `null`  |
 | `charityNumberNi`                          | null,string  | Optional     | `null`  |
 | `companyNumber`                            | string       | Optional     | `""`    |
-| `evidenceOfSupport`                        | array        | Optional     |         |
 | `informationNotPublicallyAvailableRequest` | string,null  | Optional     |         |
 | `involveInResearch`                        | boolean,null | Optional     |         |
 | `keepInformed`                             | boolean,null | Optional     |         |
@@ -403,53 +402,6 @@ All instances must conform to this regular expression
 
 ```json
 123456789
-```
-
-#### evidenceOfSupport
-
-##### The Evidenceofsupport Schema
-
-`evidenceOfSupport`
-
-- is optional
-- type: `object[]`
-
-##### evidenceOfSupport Type
-
-Array type: `object[]`
-
-All items must be of the type: `object` with following properties:
-
-| Property      | Type   | Required     | Default |
-| ------------- | ------ | ------------ | ------- |
-| `description` | string | **Required** | `""`    |
-
-#### description
-
-##### The Description Schema
-
-`description`
-
-- is **required**
-- type: `string`
-- default: `""`
-
-##### description Type
-
-`string`
-
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [free text](<https://regexr.com/?expression=%5E(.*)%24&text=free%20text>)
-
-##### description Example
-
-```json
-free text
 ```
 
 #### informationNotPublicallyAvailableRequest
