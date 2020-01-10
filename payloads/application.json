@@ -105,14 +105,6 @@
                 "id": "ec64bc3b-c580-419a-9eba-bbce6ffc0185"
             }
         ],
-        "evidenceOfSupport": [
-            {
-                "description": "free text"
-            },
-            {
-                "description": "more free text"
-            }
-        ],
         "organisationId": "c23e12e0-e69e-11e9-aaf2-2514879727cc",
         "organisationName": "Acme Corp",
         "organisationMission": ["black-or-minority-ethnic-led", "disability-led", "lgbt+-led", "female-led", "young-people-led"],

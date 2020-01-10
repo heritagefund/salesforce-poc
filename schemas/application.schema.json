@@ -709,31 +709,6 @@
             }
           }
         },
-        "evidenceOfSupport": {
-          "$id": "#/properties/application/properties/evidenceOfSupport",
-          "type": "array",
-          "title": "The Evidenceofsupport Schema",
-          "items": {
-            "$id": "#/properties/application/properties/evidenceOfSupport/items",
-            "type": "object",
-            "title": "The Items Schema",
-            "required": [
-              "description"
-            ],
-            "properties": {
-              "description": {
-                "$id": "#/properties/application/properties/evidenceOfSupport/items/properties/description",
-                "type": "string",
-                "title": "The Description Schema",
-                "default": "",
-                "examples": [
-                  "free text"
-                ],
-                "pattern": "^(.*)$"
-              }
-            }
-          }
-        },
         "organisationId": {
           "$id": "#/properties/application/properties/organisationId",
           "type": "string",
