@@ -313,6 +313,10 @@
           ],
           "pattern": "^(.*)$"
         },
+        "projectCapitalWork": {
+          "$id": "#/properties/application/properties/projectCapitalWork",
+          "type": ["boolean", "null"]
+        },
         "projectOutcome1": {
           "$id": "#/properties/application/properties/projectOutcome1",
           "type": "string",
