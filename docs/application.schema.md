@@ -53,6 +53,7 @@ application.schema.json
 | `organisationType`                         | string       | **Required** | `""`    |
 | `projectAddress`                           | object       | **Required** |         |
 | `projectAvailable`                         | string       | **Required** | `""`    |
+| `projectCapitalWork`                       | boolean,null | Optional     |         |
 | `projectCommunity`                         | string       | **Required** | `""`    |
 | `projectCosts`                             | array        | Optional     |         |
 | `projectDateRange`                         | object       | **Required** |         |
@@ -1330,6 +1331,17 @@ All instances must conform to this regular expression
 ```json
 Even more more more text
 ```
+
+#### projectCapitalWork
+
+`projectCapitalWork`
+
+- is optional
+- type: `boolean`
+
+##### projectCapitalWork Type
+
+`boolean` , nullable
 
 #### projectCommunity
 
