@@ -40,6 +40,7 @@ application.schema.json
 | `companyNumber`                            | string       | Optional     | `""`    |
 | `informationNotPublicallyAvailableRequest` | string,null  | Optional     |         |
 | `involveInResearch`                        | boolean,null | Optional     |         |
+| `isPartnership`                            | boolean,null | Optional     |         |
 | `keepInformed`                             | boolean,null | Optional     |         |
 | `mainContactAddress`                       | object       | **Required** |         |
 | `mainContactDateOfBirth`                   | string       | **Required** | `""`    |
@@ -51,6 +52,7 @@ application.schema.json
 | `organisationId`                           | string       | **Required** | `""`    |
 | `organisationName`                         | string       | **Required** | `""`    |
 | `organisationType`                         | string       | **Required** | `""`    |
+| `partnershipDetails`                       | string,null  | Optional     |         |
 | `projectAddress`                           | object       | **Required** |         |
 | `projectAvailable`                         | string       | **Required** | `""`    |
 | `projectCapitalWork`                       | boolean,null | Optional     |         |
@@ -424,6 +426,17 @@ All instances must conform to this regular expression
 - type: `boolean`
 
 ##### involveInResearch Type
+
+`boolean` , nullable
+
+#### isPartnership
+
+`isPartnership`
+
+- is optional
+- type: `boolean`
+
+##### isPartnership Type
 
 `boolean` , nullable
 
@@ -1112,6 +1125,19 @@ The value of this property **must** be equal to one of the [known values below](
 ```json
 local - authority
 ```
+
+#### partnershipDetails
+
+Details of partnership
+
+`partnershipDetails`
+
+- is optional
+- type: `string`
+
+##### partnershipDetails Type
+
+`string`, nullable
 
 #### projectAddress
 
