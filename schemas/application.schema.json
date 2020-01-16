@@ -143,6 +143,13 @@
       "involveInResearch": {
         "type": ["boolean", "null"]
       },
+      "isPartnership": {
+        "type": ["boolean", "null"]
+      },
+      "partnershipDetails": {
+        "type": ["string", "null"],
+        "description": "Details of partnership"
+      },
         "projectName": {
           "$id": "#/properties/application/properties/projectName",
           "type": "string",

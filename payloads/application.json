@@ -144,6 +144,8 @@
         "mainContactPhone": "0345 4 10 20 30",
         "informationNotPublicallyAvailableRequest": "more free text",
         "keepInformed": false,
-        "involveInResearch": true
+        "involveInResearch": true,
+        "isPartnership": true,
+        "partnershipDetails": "More free text"
     }
 }
