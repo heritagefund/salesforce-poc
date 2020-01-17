@@ -61,6 +61,8 @@ application.schema.json
 | `projectDateRange`                         | object       | **Required** |         |
 | `projectDifference`                        | string       | **Required** | `""`    |
 | `projectName`                              | string       | **Required** | `""`    |
+| `projectNeedsPermission`                   | string       | Optional     |         |
+| `projectNeedsPermissionDetails`            | string,null  | Optional     |         |
 | `projectOrgBestPlace`                      | string       | **Required** | `""`    |
 | `projectOutcome1`                          | string       | **Required** | `""`    |
 | `projectOutcome2`                          | string,null  | Optional     | `""`    |
@@ -1667,6 +1669,34 @@ All instances must conform to this regular expression
 ```json
 my project
 ```
+
+#### projectNeedsPermission
+
+`projectNeedsPermission`
+
+- is optional
+- type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#application-known-values).
+
+##### projectNeedsPermission Known Values
+
+| Value      | Description |
+| ---------- | ----------- |
+| `yes`      |             |
+| `no`       |             |
+| `not-sure` |             |
+
+#### projectNeedsPermissionDetails
+
+`projectNeedsPermissionDetails`
+
+- is optional
+- type: `string`
+
+##### projectNeedsPermissionDetails Type
+
+`string`, nullable
 
 #### projectOrgBestPlace
 
