@@ -44,6 +44,8 @@
         "projectOutcome8Checked": false,
         "projectOutcome9": null,
         "projectOutcome9Checked": false,
+        "projectNeedsPermission": "yes",
+        "projectNeedsPermissionDetails": "more free text",
         "projectCosts": [
             {
                 "costId": "baa49446-cb70-46c7-ade1-0e17ad450c8a",

@@ -493,6 +493,15 @@
             "null"
           ]
         },
+        "projectNeedsPermission": {
+          "$id": "#/properties/application/properties/projectNeedsPermission",
+          "type":  "string",
+          "enum": ["yes", "no", "not-sure"]
+        },
+        "projectNeedsPermissionDetails": {
+          "$id": "#/properties/application/properties/projectNeedsPermissionDetails",
+          "type":  ["string", "null"]
+        },
         "projectCosts": {
           "$id": "#/properties/application/properties/projectCosts",
           "type": "array",
