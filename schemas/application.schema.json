@@ -605,7 +605,6 @@
             "required": [
               "description",
               "estimatedValue",
-              "secured"
             ],
             "properties": {
               "description": {
@@ -626,22 +625,6 @@
                 "examples": [
                   1000
                 ]
-              },
-              "secured": {
-                "$id": "#/properties/application/properties/nonCashContributions/items/properties/secured",
-                "type": "string",
-                "title": "The Secured Schema",
-                "default": "",
-                "enum": [
-                  "yes-with-evidence",
-                  "yes-no-evidence-yet",
-                  "no",
-                  "not-sure"
-                ],
-                "examples": [
-                  "yes-with-evidence"
-                ],
-                "pattern": "^(.*)$"
               }
             }
           }

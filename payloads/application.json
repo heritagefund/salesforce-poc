@@ -70,13 +70,11 @@
         "nonCashContributions": [
             {
                 "description": "Free text",
-                "estimatedValue": 1000,
-                "secured": "yes-with-evidence"
+                "estimatedValue": 1000
             },
             {
                 "description": "More free text",
-                "estimatedValue": 2000,
-                "secured": "not-sure"
+                "estimatedValue": 2000
             }
         ],
         "cashContributions": [
