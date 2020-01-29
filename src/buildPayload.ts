@@ -20,6 +20,9 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "startedAt": "2019-05-17T15:34:13.000Z"
                 },
                 "application": {
+                    "isPartnership": false,
+                    "keepInformed": false,
+                    "involveInResearch": false,
                     "projectName": projectName,
                     "projectDateRange": {
                         "startDate": "2020-12-12",
