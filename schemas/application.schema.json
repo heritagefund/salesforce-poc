@@ -222,32 +222,6 @@
               ],
               "pattern": "^(.*)$"
             },
-            "line2": {
-              "$id": "#/properties/application/properties/projectAddress/properties/line1",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Line2 Schema",
-              "default": "",
-              "examples": [
-                "Foo Street"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "line3": {
-              "$id": "#/properties/application/properties/projectAddress/properties/line1",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Line3 Schema",
-              "default": "",
-              "examples": [
-                "Foo lane"
-              ],
-              "pattern": "^(.*)$"
-            },
             "townCity": {
               "$id": "#/properties/application/properties/projectAddress/properties/townCity",
               "type": "string",
@@ -753,32 +727,6 @@
               ],
               "pattern": "^(.*)$"
             },
-            "line2": {
-              "$id": "#/properties/application/properties/projectAddress/properties/line1",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Line2 Schema",
-              "default": "",
-              "examples": [
-                "Foo Street"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "line3": {
-              "$id": "#/properties/application/properties/projectAddress/properties/line1",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Line3 Schema",
-              "default": "",
-              "examples": [
-                "Foo lane"
-              ],
-              "pattern": "^(.*)$"
-            },
             "townCity": {
               "$id": "#/properties/application/properties/organisationAddress/properties/townCity",
               "type": "string",
@@ -904,32 +852,6 @@
               "default": "",
               "examples": [
                 "41465 Bashirian Oval"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "line2": {
-              "$id": "#/properties/application/properties/projectAddress/properties/line1",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Line2 Schema",
-              "default": "",
-              "examples": [
-                "Foo Street"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "line3": {
-              "$id": "#/properties/application/properties/projectAddress/properties/line1",
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "The Line3 Schema",
-              "default": "",
-              "examples": [
-                "Foo lane"
               ],
               "pattern": "^(.*)$"
             },

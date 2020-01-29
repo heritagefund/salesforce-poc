@@ -123,8 +123,6 @@
         "mainContactDateOfBirth": "1975-10-12",
         "mainContactAddress": {
             "line1": "41465 Bashirian Oval",
-            "line2": "address line 2",
-            "line3": "address line 3",
             "county": "Berkshire",
             "postcode": "B15 1TR"
         },
