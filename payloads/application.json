@@ -123,8 +123,6 @@
         "mainContactDateOfBirth": "1975-10-12",
         "mainContactAddress": {
             "line1": "41465 Bashirian Oval",
-            "line2": "address line 2",
-            "line3": "address line 3",
             "county": "Berkshire",
             "postcode": "B15 1TR"
         },
@@ -142,7 +140,7 @@
         },
         "mainContactEmail": "Lizzie87@example.com",
         "mainContactPhone": "0345 4 10 20 30",
-        "informationNotPublicallyAvailableRequest": "more free text",
+        "informationNotPubliclyAvailableRequest": "more free text",
         "keepInformed": false,
         "involveInResearch": true,
         "isPartnership": true,
