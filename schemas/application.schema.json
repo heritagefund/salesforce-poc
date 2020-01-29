@@ -134,7 +134,7 @@
         "authorisedSignatoryTwoDetails"
       ],
       "properties": {
-        "informationNotPublicallyAvailableRequest": {
+        "informationNotPubliclyAvailableRequest": {
           "type":["string", "null"]
         },
         "keepInformed": {
