@@ -142,13 +142,15 @@ export function buildPayload(formType: string, applicationId: string, organisati
                         "role": "trustee",
                         "name": "Jane Doe",
                         "phone": "07777 777777",
-                        "email": "jane1@example.com"
+                        "email": "jane1@example.com",
+                        "isAlsoApplicant": false
                     },
                     "authorisedSignatoryTwoDetails": {
                         "role": "trustee",
                         "name": "Jane Doe",
                         "phone": "07777 777777",
-                        "email": "jane2@example.com"
+                        "email": "Lizzie87@example.com",
+                        "isAlsoApplicant": true
                     },
                     "mainContactEmail": "Lizzie87@example.com",
                     "mainContactPhone": "0345 4 10 20 30"
