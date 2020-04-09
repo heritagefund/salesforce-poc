@@ -142,7 +142,6 @@
         },
         "mainContactEmail": "Lizzie87@example.com",
         "mainContactPhone": "0345 4 10 20 30",
-        "mainContactIsAlsoSignatory": "true",
         "informationNotPubliclyAvailableRequest": "more free text",
         "keepInformed": false,
         "involveInResearch": true,

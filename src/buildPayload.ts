@@ -39,6 +39,7 @@ export function buildPayload(formType: string, applicationId: string, organisati
                     "projectCommunity": "Even more free text",
                     "projectOrgBestPlace": "Even more and more free text",
                     "projectAvailable": "Even more more more text",
+                    "projectCapitalWork": true,
                     "projectOutcome1": "More and more and more free text",
                     "projectOutcome2": "More and more and more free text",
                     "projectOutcome2Checked": true,
