@@ -921,13 +921,17 @@
             },
             "email": {
               "type": "string"
+            },
+            "isAlsoApplicant": {
+              "type": "boolean"
             }
           },
           "required": [
             "role",
             "name",
             "phone",
-            "email"
+            "email",
+            "isAlsoApplicant"
           ]
         },
         "authorisedSignatoryTwoDetails": {
@@ -944,13 +948,17 @@
             },
             "email": {
               "type": "string"
+            },
+            "isAlsoApplicant": {
+              "type": "boolean"
             }
           },
           "required": [
             "role",
             "name",
             "phone",
-            "email"
+            "email",
+            "isAlsoApplicant"
           ]
         }
       }
