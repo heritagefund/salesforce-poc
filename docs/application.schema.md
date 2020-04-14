@@ -30,58 +30,58 @@ application.schema.json
 
 `object` with following properties:
 
-| Property                                   | Type         | Required     | Default |
-| ------------------------------------------ | ------------ | ------------ | ------- |
-| `authorisedSignatoryOneDetails`            | object       | **Required** |         |
-| `authorisedSignatoryTwoDetails`            | object       | **Required** |         |
-| `cashContributions`                        | array        | Optional     |         |
-| `charityNumber`                            | null,string  | Optional     | `null`  |
-| `charityNumberNi`                          | null,string  | Optional     | `null`  |
-| `companyNumber`                            | string       | Optional     | `""`    |
-| `informationNotPublicallyAvailableRequest` | string,null  | Optional     |         |
-| `involveInResearch`                        | boolean,null | Optional     |         |
-| `isPartnership`                            | boolean,null | Optional     |         |
-| `keepInformed`                             | boolean,null | Optional     |         |
-| `mainContactAddress`                       | object       | **Required** |         |
-| `mainContactDateOfBirth`                   | string       | **Required** | `""`    |
-| `mainContactEmail`                         | string       | **Required** | `""`    |
-| `mainContactName`                          | string       | **Required** | `""`    |
-| `mainContactPhone`                         | string       | **Required** | `""`    |
-| `nonCashContributions`                     | array        | Optional     |         |
-| `organisationAddress`                      | object       | **Required** |         |
-| `organisationId`                           | string       | **Required** | `""`    |
-| `organisationName`                         | string       | **Required** | `""`    |
-| `organisationType`                         | string       | **Required** | `""`    |
-| `partnershipDetails`                       | string,null  | Optional     |         |
-| `projectAddress`                           | object       | **Required** |         |
-| `projectAvailable`                         | string       | **Required** | `""`    |
-| `projectCapitalWork`                       | boolean,null | Optional     |         |
-| `projectCommunity`                         | string       | **Required** | `""`    |
-| `projectCosts`                             | array        | Optional     |         |
-| `projectDateRange`                         | object       | **Required** |         |
-| `projectDifference`                        | string       | **Required** | `""`    |
-| `projectName`                              | string       | **Required** | `""`    |
-| `projectNeedsPermission`                   | string       | Optional     |         |
-| `projectNeedsPermissionDetails`            | string,null  | Optional     |         |
-| `projectOrgBestPlace`                      | string       | **Required** | `""`    |
-| `projectOutcome1`                          | string       | **Required** | `""`    |
-| `projectOutcome2`                          | string,null  | Optional     | `""`    |
-| `projectOutcome2Checked`                   | boolean,null | Optional     |         |
-| `projectOutcome3`                          | string,null  | Optional     | `""`    |
-| `projectOutcome4`                          | string,null  | Optional     | `""`    |
-| `projectOutcome4Checked`                   | boolean,null | Optional     |         |
-| `projectOutcome5`                          | string,null  | Optional     | `""`    |
-| `projectOutcome5Checked`                   | boolean,null | Optional     |         |
-| `projectOutcome6`                          | string,null  | Optional     | `""`    |
-| `projectOutcome6Checked`                   | boolean,null | Optional     |         |
-| `projectOutcome7`                          | string,null  | Optional     | `""`    |
-| `projectOutcome7Checked`                   | boolean,null | Optional     |         |
-| `projectOutcome8`                          | string,null  | Optional     | `""`    |
-| `projectOutcome8Checked`                   | boolean,null | Optional     |         |
-| `projectOutcome9`                          | string,null  | Optional     | `null`  |
-| `projectOutcome9Checked`                   | boolean,null | Optional     |         |
-| `projectVolunteers`                        | array        | Optional     |         |
-| `yourIdeaProject`                          | string       | **Required** | `""`    |
+| Property                                 | Type         | Required     | Default |
+| ---------------------------------------- | ------------ | ------------ | ------- |
+| `authorisedSignatoryOneDetails`          | object       | **Required** |         |
+| `authorisedSignatoryTwoDetails`          | object       | **Required** |         |
+| `cashContributions`                      | array        | Optional     |         |
+| `charityNumber`                          | null,string  | Optional     | `null`  |
+| `charityNumberNi`                        | null,string  | Optional     | `null`  |
+| `companyNumber`                          | string       | Optional     | `""`    |
+| `informationNotPubliclyAvailableRequest` | string,null  | Optional     |         |
+| `involveInResearch`                      | boolean,null | Optional     |         |
+| `isPartnership`                          | boolean,null | Optional     |         |
+| `keepInformed`                           | boolean,null | Optional     |         |
+| `mainContactAddress`                     | object       | **Required** |         |
+| `mainContactDateOfBirth`                 | string       | **Required** | `""`    |
+| `mainContactEmail`                       | string       | **Required** | `""`    |
+| `mainContactName`                        | string       | **Required** | `""`    |
+| `mainContactPhone`                       | string       | **Required** | `""`    |
+| `nonCashContributions`                   | array        | Optional     |         |
+| `organisationAddress`                    | object       | **Required** |         |
+| `organisationId`                         | string       | **Required** | `""`    |
+| `organisationName`                       | string       | **Required** | `""`    |
+| `organisationType`                       | string       | **Required** | `""`    |
+| `partnershipDetails`                     | string,null  | Optional     |         |
+| `projectAddress`                         | object       | **Required** |         |
+| `projectAvailable`                       | string       | **Required** | `""`    |
+| `projectCapitalWork`                     | boolean,null | Optional     |         |
+| `projectCommunity`                       | string       | **Required** | `""`    |
+| `projectCosts`                           | array        | Optional     |         |
+| `projectDateRange`                       | object       | **Required** |         |
+| `projectDifference`                      | string       | **Required** | `""`    |
+| `projectName`                            | string       | **Required** | `""`    |
+| `projectNeedsPermission`                 | string       | Optional     |         |
+| `projectNeedsPermissionDetails`          | string,null  | Optional     |         |
+| `projectOrgBestPlace`                    | string       | **Required** | `""`    |
+| `projectOutcome1`                        | string       | **Required** | `""`    |
+| `projectOutcome2`                        | string,null  | Optional     | `""`    |
+| `projectOutcome2Checked`                 | boolean,null | Optional     |         |
+| `projectOutcome3`                        | string,null  | Optional     | `""`    |
+| `projectOutcome4`                        | string,null  | Optional     | `""`    |
+| `projectOutcome4Checked`                 | boolean,null | Optional     |         |
+| `projectOutcome5`                        | string,null  | Optional     | `""`    |
+| `projectOutcome5Checked`                 | boolean,null | Optional     |         |
+| `projectOutcome6`                        | string,null  | Optional     | `""`    |
+| `projectOutcome6Checked`                 | boolean,null | Optional     |         |
+| `projectOutcome7`                        | string,null  | Optional     | `""`    |
+| `projectOutcome7Checked`                 | boolean,null | Optional     |         |
+| `projectOutcome8`                        | string,null  | Optional     | `""`    |
+| `projectOutcome8Checked`                 | boolean,null | Optional     |         |
+| `projectOutcome9`                        | string,null  | Optional     | `null`  |
+| `projectOutcome9Checked`                 | boolean,null | Optional     |         |
+| `projectVolunteers`                      | array        | Optional     |         |
+| `yourIdeaProject`                        | string       | **Required** | `""`    |
 
 #### authorisedSignatoryOneDetails
 
@@ -94,12 +94,13 @@ application.schema.json
 
 `object` with following properties:
 
-| Property | Type   | Required     |
-| -------- | ------ | ------------ |
-| `email`  | string | **Required** |
-| `name`   | string | **Required** |
-| `phone`  | string | **Required** |
-| `role`   | string | **Required** |
+| Property          | Type    | Required     |
+| ----------------- | ------- | ------------ |
+| `email`           | string  | **Required** |
+| `isAlsoApplicant` | boolean | **Required** |
+| `name`            | string  | **Required** |
+| `phone`           | string  | **Required** |
+| `role`            | string  | **Required** |
 
 #### email
 
@@ -111,6 +112,17 @@ application.schema.json
 ##### email Type
 
 `string`
+
+#### isAlsoApplicant
+
+`isAlsoApplicant`
+
+- is **required**
+- type: `boolean`
+
+##### isAlsoApplicant Type
+
+`boolean`
 
 #### name
 
@@ -156,12 +168,13 @@ application.schema.json
 
 `object` with following properties:
 
-| Property | Type   | Required     |
-| -------- | ------ | ------------ |
-| `email`  | string | **Required** |
-| `name`   | string | **Required** |
-| `phone`  | string | **Required** |
-| `role`   | string | **Required** |
+| Property          | Type    | Required     |
+| ----------------- | ------- | ------------ |
+| `email`           | string  | **Required** |
+| `isAlsoApplicant` | boolean | **Required** |
+| `name`            | string  | **Required** |
+| `phone`           | string  | **Required** |
+| `role`            | string  | **Required** |
 
 #### email
 
@@ -173,6 +186,17 @@ application.schema.json
 ##### email Type
 
 `string`
+
+#### isAlsoApplicant
+
+`isAlsoApplicant`
+
+- is **required**
+- type: `boolean`
+
+##### isAlsoApplicant Type
+
+`boolean`
 
 #### name
 
@@ -409,14 +433,14 @@ All instances must conform to this regular expression
 123456789
 ```
 
-#### informationNotPublicallyAvailableRequest
+#### informationNotPubliclyAvailableRequest
 
-`informationNotPublicallyAvailableRequest`
+`informationNotPubliclyAvailableRequest`
 
 - is optional
 - type: `string`
 
-##### informationNotPublicallyAvailableRequest Type
+##### informationNotPubliclyAvailableRequest Type
 
 `string`, nullable
 
@@ -466,14 +490,12 @@ All instances must conform to this regular expression
 
 `object` with following properties:
 
-| Property   | Type        | Required     | Default |
-| ---------- | ----------- | ------------ | ------- |
-| `county`   | string      | **Required** | `""`    |
-| `line1`    | string      | **Required** | `""`    |
-| `line2`    | string,null | Optional     | `""`    |
-| `line3`    | string,null | Optional     | `""`    |
-| `postcode` | string      | **Required** | `""`    |
-| `townCity` | string      | **Required** | `""`    |
+| Property   | Type   | Required     | Default |
+| ---------- | ------ | ------------ | ------- |
+| `county`   | string | **Required** | `""`    |
+| `line1`    | string | **Required** | `""`    |
+| `postcode` | string | **Required** | `""`    |
+| `townCity` | string | **Required** | `""`    |
 
 #### county
 
@@ -529,62 +551,6 @@ All instances must conform to this regular expression
 
 ```json
 41465 Bashirian Oval
-```
-
-#### line2
-
-##### The Line2 Schema
-
-`line2`
-
-- is optional
-- type: `string`
-- default: `""`
-
-##### line2 Type
-
-`string`, nullable
-
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [Foo Street](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20Street>)
-
-##### line2 Example
-
-```json
-Foo Street
-```
-
-#### line3
-
-##### The Line3 Schema
-
-`line3`
-
-- is optional
-- type: `string`
-- default: `""`
-
-##### line3 Type
-
-`string`, nullable
-
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [Foo lane](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20lane>)
-
-##### line3 Example
-
-```json
-Foo lane
 ```
 
 #### postcode
@@ -774,7 +740,6 @@ All items must be of the type: `object` with following properties:
 | ---------------- | ------- | ------------ | ------- |
 | `description`    | string  | **Required** | `""`    |
 | `estimatedValue` | integer | **Required** | `0`     |
-| `secured`        | string  | **Required** | `""`    |
 
 #### description
 
@@ -824,33 +789,6 @@ Free text
 1000
 ```
 
-#### secured
-
-##### The Secured Schema
-
-`secured`
-
-- is **required**
-- type: `enum`
-- default: `""`
-
-The value of this property **must** be equal to one of the [known values below](#application-known-values).
-
-##### secured Known Values
-
-| Value                 | Description |
-| --------------------- | ----------- |
-| `yes-with-evidence`   |             |
-| `yes-no-evidence-yet` |             |
-| `no`                  |             |
-| `not-sure`            |             |
-
-##### secured Example
-
-```json
-yes-with-evidence
-```
-
 #### organisationAddress
 
 ##### The Organisationaddress Schema
@@ -864,14 +802,12 @@ yes-with-evidence
 
 `object` with following properties:
 
-| Property   | Type        | Required     | Default |
-| ---------- | ----------- | ------------ | ------- |
-| `county`   | string      | **Required** | `""`    |
-| `line1`    | string      | **Required** | `""`    |
-| `line2`    | string,null | Optional     | `""`    |
-| `line3`    | string,null | Optional     | `""`    |
-| `postcode` | string      | **Required** | `""`    |
-| `townCity` | string      | **Required** | `""`    |
+| Property   | Type   | Required     | Default |
+| ---------- | ------ | ------------ | ------- |
+| `county`   | string | **Required** | `""`    |
+| `line1`    | string | **Required** | `""`    |
+| `postcode` | string | **Required** | `""`    |
+| `townCity` | string | **Required** | `""`    |
 
 #### county
 
@@ -927,62 +863,6 @@ All instances must conform to this regular expression
 
 ```json
 82553 Demarco Rapid
-```
-
-#### line2
-
-##### The Line2 Schema
-
-`line2`
-
-- is optional
-- type: `string`
-- default: `""`
-
-##### line2 Type
-
-`string`, nullable
-
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [Foo Street](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20Street>)
-
-##### line2 Example
-
-```json
-Foo Street
-```
-
-#### line3
-
-##### The Line3 Schema
-
-`line3`
-
-- is optional
-- type: `string`
-- default: `""`
-
-##### line3 Type
-
-`string`, nullable
-
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [Foo lane](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20lane>)
-
-##### line3 Example
-
-```json
-Foo lane
 ```
 
 #### postcode
@@ -1154,14 +1034,12 @@ Details of partnership
 
 `object` with following properties:
 
-| Property          | Type        | Required     | Default |
-| ----------------- | ----------- | ------------ | ------- |
-| `county`          | string      | **Required** | `""`    |
-| `line1`           | string      | **Required** | `""`    |
-| `line2`           | string,null | Optional     | `""`    |
-| `line3`           | string,null | Optional     | `""`    |
-| `projectPostcode` | string      | **Required** | `""`    |
-| `townCity`        | string      | **Required** | `""`    |
+| Property          | Type   | Required     | Default |
+| ----------------- | ------ | ------------ | ------- |
+| `county`          | string | **Required** | `""`    |
+| `line1`           | string | **Required** | `""`    |
+| `projectPostcode` | string | **Required** | `""`    |
+| `townCity`        | string | **Required** | `""`    |
 
 #### county
 
@@ -1217,62 +1095,6 @@ All instances must conform to this regular expression
 
 ```json
 82553 Demarco Rapid
-```
-
-#### line2
-
-##### The Line2 Schema
-
-`line2`
-
-- is optional
-- type: `string`
-- default: `""`
-
-##### line2 Type
-
-`string`, nullable
-
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [Foo Street](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20Street>)
-
-##### line2 Example
-
-```json
-Foo Street
-```
-
-#### line3
-
-##### The Line3 Schema
-
-`line3`
-
-- is optional
-- type: `string`
-- default: `""`
-
-##### line3 Type
-
-`string`, nullable
-
-All instances must conform to this regular expression
-
-```regex
-^(.*)$
-```
-
-- test example: [Foo lane](<https://regexr.com/?expression=%5E(.*)%24&text=Foo%20lane>)
-
-##### line3 Example
-
-```json
-Foo lane
 ```
 
 #### projectPostcode
