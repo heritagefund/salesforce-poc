@@ -598,7 +598,7 @@
             "title": "The Items Schema",
             "required": [
               "description",
-              "estimatedValue",
+              "estimatedValue"
             ],
             "properties": {
               "description": {
