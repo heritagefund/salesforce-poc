@@ -1,10 +1,5 @@
 import uuid = require('uuid')
 
-export enum FormType {
-    ThreeToTenGrant = "3-10k-grant",
-    PermissionToStart = "permission-to-start",
-}
-
 export function buildPayload(formType: string, applicationId: string, organisationName?: string, projectName?: string) {
     switch (formType) {
         case '3-10k-grant':

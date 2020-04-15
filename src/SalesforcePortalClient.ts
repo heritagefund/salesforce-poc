@@ -3,7 +3,7 @@ import uuid = require('uuid/v1')
 import util = require('util');
 import redis = require('redis')
 import { promisify } from 'util'
-import {buildPayload, FormType} from './buildPayload'
+import {buildPayload} from './buildPayload'
 
 
 export class SalesforcePortalClient {
