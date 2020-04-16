@@ -3,7 +3,6 @@ import cli from 'cli-ux'
 import { SalesforcePortalClient } from './SalesforcePortalClient'
 import './lib/env'
 import * as inquirer from 'inquirer'
-import { FormType } from './buildPayload'
 import uuid = require('uuid')
 
 
