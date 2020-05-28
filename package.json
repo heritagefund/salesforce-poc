@@ -7,7 +7,7 @@
   },
   "bugs": "https://github.com/gidsg/portal-cli/issues",
   "dependencies": {
-    "@adobe/jsonschema2md": "^3.3.1",
+    "@adobe/jsonschema2md": "^4.1.2",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
