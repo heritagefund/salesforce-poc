@@ -54,7 +54,7 @@ class PortalCli extends Command {
       ]
     ).then(
       // Log out the payload which is being sent via a HTTP POST request to Salesforce
-      p => this.log("p[1]")
+      p => this.log(p[1])
     )
 
   }
